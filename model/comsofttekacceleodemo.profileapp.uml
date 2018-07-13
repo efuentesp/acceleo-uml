@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profileext="http://www.eclipse.org/Papyrus/2014/profile/profileExternalization" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Package xmi:id="_gmPG8BgfEeiXUO3vwBykwQ" name="profile application">
+    <packagedElement xmi:type="uml:Package" xmi:id="_gmZfABgfEeiXUO3vwBykwQ" name="CRUDcomsofttekacceleodemo">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gmZfARgfEeiXUO3vwBykwQ" supplier="_gmZfABgfEeiXUO3vwBykwQ">
+        <client xmi:type="uml:Package" href="crud.uml#_s7AHwIWYEeawVud2qHIznQ"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bejbcBgfEeiXUO3vwBykwQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bejbcRgfEeiXUO3vwBykwQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_lVwmkBgeEeiXUO3vwBykwQ"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="ProfileSTK.profile.uml#_ahah4IM9EeW4E5WIqIiz6Q"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gmY38BgfEeiXUO3vwBykwQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gmY38RgfEeiXUO3vwBykwQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/Papyrus/2014/profile/profileExternalization#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_PROFILEEXT/ProfileExternalization.profile.uml#_Mzzc0EWjEeSNXJj2G3jVCw"/>
+    </profileApplication>
+  </uml:Package>
+  <profileext:ApplyProfiles xmi:id="_gmZfAhgfEeiXUO3vwBykwQ" base_Dependency="_gmZfARgfEeiXUO3vwBykwQ"/>
+</xmi:XMI>

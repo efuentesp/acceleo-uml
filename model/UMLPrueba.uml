@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_t9gpoMevEeadl7ttOykawA" name="RootElement">
+  <packageImport xmi:id="_uCOxkMevEeadl7ttOykawA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wQIzkMevEeadl7ttOykawA" name="AperturaSucesion">
+    <eAnnotations xmi:id="_FTIuYNwLEeajQK3UG6KHVg" source="tramite"/>
+    <ownedAttribute xmi:id="_L4wVYMewEeadl7ttOykawA" name="folio">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MRxSUMewEeadl7ttOykawA" name="fechaMovimiento">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_smNnANmsEea654ECSavGEA" name="nombre">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_w84sUNmsEea654ECSavGEA" value="Apertura de Sucesión"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_E_1L8M0lEeadl7ttOykawA" name="tramite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_v4PcQM0mEeadl7ttOykawA" name="Paso1_IdentificacionContribuyente">
+    <eAnnotations xmi:id="_LUCZgNwOEeajQK3UG6KHVg" source="detalle"/>
+    <ownedAttribute xmi:id="_8jxTsM0mEeadl7ttOykawA" name="paso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_M6RBAM0nEeadl7ttOykawA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_P7O3oM0nEeadl7ttOykawA" name="ultimoPaso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_XXBTwM0nEeadl7ttOykawA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mphB4s0xEeadl7ttOykawA" name="identificacioncontribuyente" type="_hJGtUM0xEeadl7ttOykawA" association="_mpga0M0xEeadl7ttOykawA"/>
+    <ownedAttribute xmi:id="_dEwO0NmtEea654ECSavGEA" name="nombre">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_g9HAcNmtEea654ECSavGEA" value="Identificación del Contribuyente"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_utgYwNmuEea654ECSavGEA" name="reusar">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yynM8NmuEea654ECSavGEA" value="IdentificacionContribuyente"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_cbn2EM0nEeadl7ttOykawA" name="detalle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vqF2EM0nEeadl7ttOykawA" name="Paso2_RepresentanteLegal">
+    <eAnnotations xmi:id="_O054MNwOEeajQK3UG6KHVg" source="detalle"/>
+    <ownedAttribute xmi:id="_y7DQgM0nEeadl7ttOykawA" name="paso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_3RuV0M0nEeadl7ttOykawA" value="2"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_44XjgM0nEeadl7ttOykawA" name="ultimoPaso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_CS0AgM0vEeadl7ttOykawA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uj3pUs0xEeadl7ttOykawA" name="representantelegal" association="_uj3CQM0xEeadl7ttOykawA"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_6zSpAM0wEeadl7ttOykawA" name="detalle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ENJmQM0vEeadl7ttOykawA" memberEnd="_ENLbcM0vEeadl7ttOykawA">
+    <eAnnotations xmi:id="_ENKNUM0vEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_ENKNUc0vEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_ENLbcM0vEeadl7ttOykawA" name="aperturasucesion" type="_wQIzkMevEeadl7ttOykawA" association="_ENJmQM0vEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IC0QQM0vEeadl7ttOykawA" name="Paso3_AvisoActualizacionSituacionFiscal">
+    <eAnnotations xmi:id="_RjeXQNwOEeajQK3UG6KHVg" source="detalle"/>
+    <ownedAttribute xmi:id="_N4RAsM0vEeadl7ttOykawA" name="paso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_SnIjkM0vEeadl7ttOykawA" value="3"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_apTDMM0vEeadl7ttOykawA" name="ultimoPaso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_fpC6sM0vEeadl7ttOykawA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vmBC080xEeadl7ttOykawA" name="class2" type="_oVSnMM0xEeadl7ttOykawA" association="_vmBC0M0xEeadl7ttOykawA"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_-TR98M0wEeadl7ttOykawA" name="detalle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hHt4IM0vEeadl7ttOykawA" memberEnd="_hHvtUM0vEeadl7ttOykawA">
+    <eAnnotations xmi:id="_hHufMM0vEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_hHufMc0vEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_hHvtUM0vEeadl7ttOykawA" name="aperturasucesion" type="_wQIzkMevEeadl7ttOykawA" association="_hHt4IM0vEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jzdFoM0vEeadl7ttOykawA" name="Paso4_DocumentacionProbatoria">
+    <eAnnotations xmi:id="_T0hz4NwOEeajQK3UG6KHVg" source="detalle"/>
+    <ownedAttribute xmi:id="_nLq-oM0vEeadl7ttOykawA" name="paso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_uWg0sM0vEeadl7ttOykawA" value="4"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_voDVEM0vEeadl7ttOykawA" name="ultimoPaso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_4nKlIM0vEeadl7ttOykawA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_57Lf080xEeadl7ttOykawA" name="documentacionprobatoria" type="_0zemMM0xEeadl7ttOykawA" association="_57Lf0M0xEeadl7ttOykawA"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_BsCpgM0xEeadl7ttOykawA" name="detalle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7bS5oM0vEeadl7ttOykawA" memberEnd="_7bUu0M0vEeadl7ttOykawA">
+    <eAnnotations xmi:id="_7bTgsM0vEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_7bTgsc0vEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_7bUu0M0vEeadl7ttOykawA" name="aperturasucesion" type="_wQIzkMevEeadl7ttOykawA" association="_7bS5oM0vEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9RdxEM0vEeadl7ttOykawA" name="Paso5_AcuseActualizacionSituacionFiscal">
+    <eAnnotations xmi:id="_Y8LDINwOEeajQK3UG6KHVg" source="detalle"/>
+    <ownedAttribute xmi:id="_CDU9kM0wEeadl7ttOykawA" name="paso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_F17sgM0wEeadl7ttOykawA" value="5"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_GzbPgM0wEeadl7ttOykawA" name="ultimoPaso">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_MFoI8M0wEeadl7ttOykawA" value="true"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__FOi080xEeadl7ttOykawA" name="acuseactualizacionsituacionfiscal" type="_69nNMM0xEeadl7ttOykawA" association="__FOi0M0xEeadl7ttOykawA"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_EGJ7gM0xEeadl7ttOykawA" name="detalle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NqRykM0wEeadl7ttOykawA" memberEnd="_NqTnwM0wEeadl7ttOykawA">
+    <eAnnotations xmi:id="_NqSZoM0wEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_NqSZoc0wEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_NqTnwM0wEeadl7ttOykawA" name="aperturasucesion" type="_wQIzkMevEeadl7ttOykawA" association="_NqRykM0wEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hJGtUM0xEeadl7ttOykawA" name="IdentificacionContribuyente">
+    <eAnnotations xmi:id="_fHWL8NwOEeajQK3UG6KHVg" source="reuso"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_HEF20M0yEeadl7ttOykawA" name="reuso"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mpga0M0xEeadl7ttOykawA" memberEnd="_mphB4s0xEeadl7ttOykawA _mpho8M0xEeadl7ttOykawA">
+    <eAnnotations xmi:id="_mphB4M0xEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_mphB4c0xEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_mpho8M0xEeadl7ttOykawA" name="paso1_identificacioncontribuyente" type="_v4PcQM0mEeadl7ttOykawA" association="_mpga0M0xEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oVSnMM0xEeadl7ttOykawA" name="AvisoActualizacionFiscal">
+    <eAnnotations xmi:id="_hZ3BINwOEeajQK3UG6KHVg" source="reuso"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_LcZT0M0yEeadl7ttOykawA" name="reuso"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uj3CQM0xEeadl7ttOykawA" memberEnd="_uj3pUs0xEeadl7ttOykawA _uj43cM0xEeadl7ttOykawA">
+    <eAnnotations xmi:id="_uj3pUM0xEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_uj3pUc0xEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_uj43cM0xEeadl7ttOykawA" name="paso2_representantelegal" type="_vqF2EM0nEeadl7ttOykawA" association="_uj3CQM0xEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vmBC0M0xEeadl7ttOykawA" memberEnd="_vmBC080xEeadl7ttOykawA _vmCQ8M0xEeadl7ttOykawA">
+    <eAnnotations xmi:id="_vmBC0c0xEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_vmBC0s0xEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_vmCQ8M0xEeadl7ttOykawA" name="paso3_avisoactualizacionsituacionfiscal" type="_IC0QQM0vEeadl7ttOykawA" association="_vmBC0M0xEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0zemMM0xEeadl7ttOykawA" name="DocumentacionProbatoria">
+    <eAnnotations xmi:id="_jXADQNwOEeajQK3UG6KHVg" source="reuso"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_NwUeQM0yEeadl7ttOykawA" name="reuso"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_57Lf0M0xEeadl7ttOykawA" memberEnd="_57Lf080xEeadl7ttOykawA _57Mt8M0xEeadl7ttOykawA">
+    <eAnnotations xmi:id="_57Lf0c0xEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="_57Lf0s0xEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_57Mt8M0xEeadl7ttOykawA" name="paso4_documentacionprobatoria" type="_jzdFoM0vEeadl7ttOykawA" association="_57Lf0M0xEeadl7ttOykawA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_69nNMM0xEeadl7ttOykawA" name="AcuseActualizacionSituacionFiscal">
+    <eAnnotations xmi:id="_mYHD0NwOEeajQK3UG6KHVg" source="reuso"/>
+    <nestedClassifier xmi:type="uml:Stereotype" xmi:id="_QTb7QM0yEeadl7ttOykawA" name="reuso"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__FOi0M0xEeadl7ttOykawA" memberEnd="__FOi080xEeadl7ttOykawA __FPw8M0xEeadl7ttOykawA">
+    <eAnnotations xmi:id="__FOi0c0xEeadl7ttOykawA" source="org.eclipse.papyrus">
+      <details xmi:id="__FOi0s0xEeadl7ttOykawA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="__FPw8M0xEeadl7ttOykawA" name="paso5_acuseactualizacionsituacionfiscal" type="_9RdxEM0vEeadl7ttOykawA" association="__FOi0M0xEeadl7ttOykawA"/>
+  </packagedElement>
+</uml:Model>
