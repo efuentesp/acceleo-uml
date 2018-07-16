@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generateView" name="org.eclipse.acceleo.module.sample">
-    <property name="ECLIPSE_HOME" value="../../../../../software/eclipse"/>
-    <property name="ECLIPSE_WORKSPACE" value="../../../workspacePruebaRepo"/>
+    <property name="ECLIPSE_HOME" value="../../../../../Tools/eclipse"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../.."/>
 
     <!-- The classpath with only the dependencies used by the project -->
     <path id="org.eclipse.acceleo.module.sample.libraryclasspath">

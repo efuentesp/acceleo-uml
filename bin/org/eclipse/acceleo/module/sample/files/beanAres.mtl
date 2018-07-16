@@ -1,0 +1,36 @@
+[comment encoding = UTF-8 /]
+[module beanAres('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[template public generateElementBean(beanClass : Class)]
+
+[comment @main /]
+[file ('main/java/'.concat(beanClass._package.name.replaceAll('\\.','/')).concat('/bean/').concat(beanClass.name).concat('Bean.java'), false), 'UTF-8') ]
+
+package [beanClass._package.name/].bean;
+
+import com.softtek.frmwrk.base.bean.BaseBean;
+[if (getAllAttributes()->select(s:Property|s.type='HDate') -> asSequence() -> size() > 0)]
+import java.util.Date;
+[/if]
+
+public class [name.toUpperFirst()/]Bean extends BaseBean {
+
+[for (anAttribute: Property | getAllAttributes())][for (anElement: Property | anAttribute.type.allOwnedElements() )]
+[if (anElement.name.equalsIgnoreCase('javaType'))] 
+	private [anElement.default/] [anAttribute.name.toLowerFirst()/];
+[/if][/for][/for]
+
+[for (anAttribute: Property | getAllAttributes())][for (anElement: Property | anAttribute.type.allOwnedElements() )]
+[if (anElement.name.equalsIgnoreCase('javaType'))] 
+	public [anElement.default/] get[anAttribute.name.toUpperFirst()/] () {
+	    return [anAttribute.name.toLowerFirst()/];  		
+    }
+
+	public void set[anAttribute.name.toUpperFirst()/]([anElement.default/] [anAttribute.name.toLowerFirst()/]) {
+		this.[anAttribute.name.toLowerFirst()/] = [anAttribute.name.toLowerFirst()/];
+	}
+
+[/if][/for][/for]
+}
+[/file]
+[/template]

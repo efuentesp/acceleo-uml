@@ -1,0 +1,31 @@
+[comment encoding = UTF-8 /]
+[module controllerSearchAres('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[template public generateElementController(controllerClass : Class)]
+[comment @main /]
+
+[file ('main/java/'.concat(controllerClass._package.name.replaceAll('\\.','/')).concat('/presentation/').concat(controllerClass.name.toLower()).concat('/').concat('Search').concat(controllerClass.name).concat('Controller.java'), false), 'UTF-8') ]
+package [_package.name/].presentation.[name.toLower()/];
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.softtek.frmwrk.base.presentation.BaseController;
+import [_package.name/].bean.[name.toUpperFirst()/]Bean;
+import [_package.name/].domain.[name.toUpperFirst()/];
+import [_package.name/].business.[name.toLower()/].Search[name.toUpperFirst()/]Service;
+
+@RequestMapping(value="/search[name.toUpperFirst()/]")
+@Controller
+public class Search[name.toUpperFirst()/]Controller extends BaseController<[name.toUpperFirst()/],[name.toUpperFirst()/]Bean> {
+
+	private static final long serialVersionUID = 1L;
+
+	@Autowired 
+	public Search[name.toUpperFirst()/]Controller(Search[name.toUpperFirst()/]Service service) {
+		super(service, "search[name.toUpperFirst()/]/searchItem", [name.toUpperFirst()/].class);
+	}
+
+}
+[/file]
+[/template]

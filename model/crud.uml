@@ -3,49 +3,74 @@
 	<uml:Model xmi:id="_GbyPcBgjEeiXUO3vwBykwQ" name="Angular">
 	<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo">
 		<packagedElement xmi:type="uml:Class" xmi:id="_genero1234" name="genero">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmale12345p" name="male" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfemale12345p" name="female" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmale12345p" name="male" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfemale12345p" name="female" type="_htext12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_parentesco1234" name="parentesco">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pconyuge12345p" name="conyuge" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_phijo12345p" name="hijo" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pascendiente12345p" name="ascendiente" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pconyuge12345p" name="conyuge" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_phijo12345p" name="hijo" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pascendiente12345p" name="ascendiente" type="_htext12345"/>
 		 </packagedElement>
+		 
 		<packagedElement xmi:type="uml:Class" xmi:id="_afiliado1234" name="afiliado">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnss12345p" name="nss" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_paterno12345p" name="apellido_paterno" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_materno12345p" name="apellido_materno" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnss12345p" name="nss" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoPaterno12345p" name="apellidoPaterno" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoMaterno12345p" name="apellidoMaterno" type="_htext12345"/>
 			<ownedAttribute xmi:type="uml:Property" xmi:id="_pgenero12345p" name="genero" type="_genero1234"/>
 			<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiario12345p" name="beneficiario" type="_beneficiario12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_afiliacion12345p" name="fecha_afiliacion" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfoto12345p" name="foto" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pacta_nacimiento12345p" name="acta_nacimiento" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo12345p" name="correo" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_psemanas_cotizadas12345p" name="semanas_cotizadas" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmonto_pension12345p" name="monto_pension" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechaAfiliacion12345p" name="fechaAfiliacion" type="_hdate12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfoto12345p" name="foto" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pactaNacimiento12345p" name="actaNacimiento" type="_hnumber12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo12345p" name="correo" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_psemanasCotizadas12345p" name="semanasCotizadas" type="_hnumber12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmontoPension12345p" name="montoPension" type="_hnumber12345"/>
 		</packagedElement>
+		
 		<packagedElement xmi:type="uml:Class" xmi:id="_tipopension1234" name="tipopension">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave12345p" name="clave" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave12345p" name="clave" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htext12345"/>
 		</packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_solicitudpension1234" name="solicitudpension">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero12345p" name="numero" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero12345p" name="numero" type="_htext12345"/>
 			<ownedAttribute xmi:type="uml:Property" xmi:id="_pafiliado12345p" name="afiliado" type="_afiliado12345"/>
 			<ownedAttribute xmi:type="uml:Property" xmi:id="_ptipopension12345p" name="tipopension" type="_tipopension12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_solicitud12345p" name="fecha_solicitud" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_solicitud12345p" name="fecha_solicitud" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_htext12345"/>
 		</packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_beneficiario1234" name="beneficiario">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcurp12345p" name="curp" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_paterno12345p" name="apellido_paterno" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_materno12345p" name="apellido_materno" type="_crud12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_nacimiento12345p" name="fecha_nacimiento" type="_crud12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcurp12345p" name="curp" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_paterno12345p" name="apellido_paterno" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellido_materno12345p" name="apellido_materno" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_nacimiento12345p" name="fecha_nacimiento" type="_htext12345"/>
 			<ownedAttribute xmi:type="uml:Property" xmi:id="_pparentesco12345p" name="parentesco" type="_parentesco1234"/>
+		</packagedElement>
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_adminpermiso1234" name="adminpermiso">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidGrupo12345p" name="idGrupo" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombreGrupo12345p" name="nombreGrupo" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidPrivilege12345p" name="idPrivilege" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombrePrivilege12345p" name="nombrePrivilege" type="_htext12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_padmin12345p" name="admin" type="_hboolean12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_puser12345p" name="user" type="_hboolean12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_panonymous12345p" name="anonymous" type="_hboolean12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidAuthorityAdmin12345p" name="idAuthorityAdmin" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidPrivilegeAdmin12345p" name="idPrivilegeAdmin" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidAuthorityUser12345p" name="idAuthorityUser" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidPrivilegeUser12345p" name="idPrivilegeUser" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pididAuthorityAnonymous12345p" name="idAuthorityAnonymous" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pidPrivilegeAnonymous12345p" name="idPrivilegeAnonymous" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pactiveUser12345p" name="activeUser" type="_hnumber12345"/>
+		</packagedElement>
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_authority1234" name="authority">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htextnotnullordered12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="creationDate" type="_hdatenotnull12345"/>
 		</packagedElement>
 		
 		<packagedElement xmi:type="uml:Class" xmi:id="_afiliado12345" name="modalafiliado">
@@ -61,10 +86,6 @@
 		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiario12345p" name="tipo" type="_beneficiario1234"/>
 		 </packagedElement>
 		
-		
-
-		
-		
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VI_tYSPtEeihHKoXXUFGQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg"/>
@@ -74,7 +95,8 @@
 	</packagedElement>
 	
 	 <packagedElement xmi:type="uml:Package" xmi:id="_RmsvEBgrEeiXUO3vwBykwQ" name="com.softtek.types">
-	   <packagedElement xmi:type="uml:Class" xmi:id="_crud12345" name="HText">
+	 
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htext12345" name="HText">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvEhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
 	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -93,6 +115,67 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextnotnull12345" name="HTextNotNull">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvEhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFRgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFhgrEeiXUO3vwBykwQ" value="20"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextnotordered12345" name="HTextOrdered">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvEhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFRgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFhgrEeiXUO3vwBykwQ" value="20"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextnotnullordered12345" name="HTextNotNullOrdered">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvEhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFRgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFhgrEeiXUO3vwBykwQ" value="20"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvGxgrEeiXUO3vwBykwQ" name="HTextSmall">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvHBgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvHRgrEeiXUO3vwBykwQ" name="type">
@@ -112,6 +195,7 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvJBgrEeiXUO3vwBykwQ" value="VARCHAR(20)"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvJRgrEeiXUO3vwBykwQ" name="HCheckbox">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvJhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvJxgrEeiXUO3vwBykwQ" name="type">
@@ -127,7 +211,8 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvLBgrEeiXUO3vwBykwQ" value="VARCHAR(10)"/>
 	     </ownedAttribute>
 	   </packagedElement>
-	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvLRgrEeiXUO3vwBykwQ" name="HNumber">
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hnumber12345" name="HNumber">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
 	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -142,6 +227,88 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hnumbernotnull12345" name="HNumberNotNull">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="number"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Integer"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hlong12345" name="HLong">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="number"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Long"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hlongnotnull12345" name="HLongNotNull">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="number"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Long"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hboolean12345" name="HBoolean">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="TINYINT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hbooleannotnull12345" name="HBooleanNotNull">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvLhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="TINYINT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvNRgrEeiXUO3vwBykwQ" name="HPassword">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvNhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvNxgrEeiXUO3vwBykwQ" name="type">
@@ -149,7 +316,8 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvOBgrEeiXUO3vwBykwQ" value="password"/>
 	     </ownedAttribute>
 	   </packagedElement>
-	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvORgrEeiXUO3vwBykwQ" name="HDate">
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdate12345" name="HDate">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvOhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvOxgrEeiXUO3vwBykwQ" name="type">
 	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -164,13 +332,32 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvQBgrEeiXUO3vwBykwQ" value="DATE"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdatenotnull12345" name="HDateNotNull">
+	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvOhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvOxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPBgrEeiXUO3vwBykwQ" value="date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPhgrEeiXUO3vwBykwQ" value="Date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvQBgrEeiXUO3vwBykwQ" value="DATE"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvQRgrEeiXUO3vwBykwQ" name="HMonth">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvQhgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvQxgrEeiXUO3vwBykwQ"/>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvRBgrEeiXUO3vwBykwQ" name="HInput">
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvRRgrEeiXUO3vwBykwQ" name="propiedad"/>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvRhgrEeiXUO3vwBykwQ" name="HTextBig">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvRxgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvSBgrEeiXUO3vwBykwQ" name="type">
@@ -190,6 +377,7 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvTxgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvUBgrEeiXUO3vwBykwQ" name="HRadio">
 	     <generalization xmi:type="uml:Generalization" xmi:id="_RmsvURgrEeiXUO3vwBykwQ" general="_RmsvRBgrEeiXUO3vwBykwQ"/>
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvUhgrEeiXUO3vwBykwQ" name="type">
@@ -205,6 +393,7 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvVxgrEeiXUO3vwBykwQ" value="VARCHAR(10)"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvWBgrEeiXUO3vwBykwQ" name="HTextarea">
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvWRgrEeiXUO3vwBykwQ" name="rows">
 	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -223,6 +412,7 @@
 	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvYBgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
 	     </ownedAttribute>
 	   </packagedElement>
+	   
 	   <packagedElement xmi:type="uml:Class" xmi:id="_RmsvYRgrEeiXUO3vwBykwQ" name="boolean">
 	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvYhgrEeiXUO3vwBykwQ" name="typeJava">
 	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -265,4 +455,7 @@
 		      		<profileSTK:Modal xmi:id="_tipopension" base_Class="_tipopension1234"/>
 		<profileSTK:Crud xmi:id="_beneficiario123" base_Class="_beneficiario1234"/>
 		      		<profileSTK:EnumRadio xmi:id="_parentesco123" base_Class="_parentesco1234"/>
+		<profileSTK:Crud xmi:id="_adminpermiso123" base_Class="_adminpermiso1234"/>
+		<profileSTK:Crud xmi:id="_authority123" base_Class="_authority1234"/>
+		      		
 	</xmi:XMI>

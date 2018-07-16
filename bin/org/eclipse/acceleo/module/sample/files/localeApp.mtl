@@ -1,0 +1,19 @@
+[comment encoding = UTF-8 /]
+[module localeApp('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[template public generateElementLocaleApp(localeApp : Class)]
+[comment @main /]
+[file ('main/resources/localeApp.properties', true), 'UTF-8')]
+#Properties for the pattern 
+[for (anAttribute: Property | getAllAttributes() -> select(s: Property | not s.name.startsWith('#')) -> sortedBy(name) ) ]
+label.[localeApp.name.toLower()/].[anAttribute.name.toLower()/]=[anAttribute.name.toUpperFirst()/]
+[/for]
+[/file]
+
+[file ('main/resources/localeApp_es_MX.properties', true), 'UTF-8')]
+#Properties for the pattern 
+[for (anAttribute: Property | getAllAttributes()-> select(s: Property | not s.name.startsWith('#')) -> sortedBy(name))]
+label.[localeApp.name.toLower()/].[anAttribute.name.toLower()/]=[anAttribute.name.toUpperFirst()/]
+[/for]
+[/file]
+[/template]
