@@ -2,67 +2,46 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profileSTK="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28 ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg">
 	<uml:Model xmi:id="_GbyPcBgjEeiXUO3vwBykwQ" name="Angular">
 	
-	<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo">
-		<packagedElement xmi:type="uml:Class" xmi:id="_genero1234" name="genero">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmale12345p" name="male" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfemale12345p" name="female" type="_htext12345"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_parentesco1234" name="parentesco">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pconyuge12345p" name="conyuge" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_phijo12345p" name="hijo" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pascendiente12345p" name="ascendiente" type="_htext12345"/>
-		 </packagedElement>
-		 
-		<packagedElement xmi:type="uml:Class" xmi:id="_afiliado1234" name="afiliado">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnss12345p" name="nss" type="_htextnotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htextnotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoPaterno12345p" name="apellidoPaterno" type="_htextnotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoMaterno12345p" name="apellidoMaterno" type="_htextnotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pgenero12345p" name="genero" type="_genero1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiario12345p" name="beneficiario" type="_beneficiario12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechaAfiliacion12345p" name="fechaAfiliacion" type="_hdatenotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfoto12345p" name="foto" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pactaNacimiento12345p" name="actaNacimiento" type="_hnumber12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo12345p" name="correo" type="_htextnotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_psemanasCotizadas12345p" name="semanasCotizadas" type="_hnumbernotnull12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmontoPension12345p" name="montoPension" type="_hnumbernotnull12345"/>
+	<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo.security">
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_authority1234" name="authority">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htextnotnullordered12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="creationDate" type="_hdatenotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="modifiedDate" type="_hdate12345"/>
 		</packagedElement>
 		
-		<packagedElement xmi:type="uml:Class" xmi:id="_tipopension1234" name="tipopension">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave12345p" name="clave" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htext12345"/>
-		</packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_solicitudpension1234" name="solicitudpension">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pid12345p" name="id" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero12345p" name="numero" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pafiliado12345p" name="afiliado" type="_afiliado12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_ptipopension12345p" name="tipopension" type="_tipopension12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha_solicitud12345p" name="fecha_solicitud" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pobservaciones12345p" name="observaciones" type="_htext12345"/>
-		</packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_beneficiario1234" name="beneficiario">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcurp12345p" name="curp" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre12345p" name="nombre" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoPaterno12345p" name="apellidoPaterno" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidoMaterno12345p" name="apellidoMaterno" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechaNacimiento12345p" name="fechaNacimiento" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pparentesco12345p" name="parentesco" type="_parentesco1234"/>
+		<packagedElement xmi:type="uml:Class" xmi:id="_privilege1234" name="privilege">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="creationDate" type="_hdatenotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="modifiedDate" type="_hdate12345"/>
 		</packagedElement>
 		
-		<packagedElement xmi:type="uml:Class" xmi:id="_afiliado12345" name="modalafiliado">
-       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pafiliado12345p" name="tipo" type="_afiliado1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_tipopension12345" name="modaltipopension">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipopension12345p" name="tipo" type="_tipopension1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_solicitudpension12345" name="modalsolicitudpension">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitudpension12345p" name="tipo" type="_solicitudpension1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_beneficiario12345" name="modalbeneficiario">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiario12345p" name="tipo" type="_beneficiario1234"/>
-		 </packagedElement>
+		<packagedElement xmi:type="uml:Class" xmi:id="_user1234" name="user">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pusername12345p" name="username" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_ppassword12345p" name="password" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pfirstname12345p" name="firstname" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_plastname12345p" name="lastname" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pemail12345p" name="email" type="_htextnotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pattemps12345p" name="attemps" type="_hlong12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_plastPasswordResetDate12345p" name="lastPasswordResetDate" type="_hdate12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="creationDate" type="_hdatenotnull12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcreationDate12345p" name="modifiedDate" type="_hdate12345"/>
+		</packagedElement>
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_authorityprivilege1234" name="authorityPrivilege">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>
+		</packagedElement>
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_grupo1234" name="grupo">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htextnotnull12345"/>
+		</packagedElement>
+		
+		<packagedElement xmi:type="uml:Class" xmi:id="_userauthority1234" name="userAuthority">
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_penabled12345p" name="enabled" type="_hbooleannotnull12345"/>		
+		</packagedElement>
 		
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VI_tYSPtEeihHKoXXUFGQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -424,14 +403,14 @@
      </profileApplication>	
 
 </uml:Model>
-		<profileSTK:Crud xmi:id="_afiliado123" base_Class="_afiliado1234"/>
-		      		<profileSTK:EnumRadio xmi:id="_genero123" base_Class="_genero1234"/>
-		      		<profileSTK:Modal xmi:id="_beneficiario" base_Class="_beneficiario1234"/>
-		<profileSTK:Crud xmi:id="_tipopension123" base_Class="_tipopension1234"/>
-		<profileSTK:Crud xmi:id="_solicitudpension123" base_Class="_solicitudpension1234"/>
-		      		<profileSTK:Modal xmi:id="_afiliado" base_Class="_afiliado1234"/>
-		      		<profileSTK:Modal xmi:id="_tipopension" base_Class="_tipopension1234"/>
-		<profileSTK:Crud xmi:id="_beneficiario123" base_Class="_beneficiario1234"/>
-		      		<profileSTK:EnumRadio xmi:id="_parentesco123" base_Class="_parentesco1234"/>
+		
+		<!-- Seguridad -->
+		<profileSTK:Crud xmi:id="_authority123" base_Class="_authority1234"/>
+		<profileSTK:Crud xmi:id="_privilege123" base_Class="_privilege1234"/>
+		<profileSTK:Crud xmi:id="_user123" base_Class="_user1234"/>
+		<profileSTK:Crud xmi:id="_authorityPrivilege123" base_Class="_authorityprivilege1234"/>
+		<profileSTK:Crud xmi:id="_grupo123" base_Class="_grupo1234"/>
+		<profileSTK:Crud xmi:id="_userauthority123" base_Class="_userauthority1234"/>	
+		<!-- /Seguridad -->
 		      		
 	</xmi:XMI>

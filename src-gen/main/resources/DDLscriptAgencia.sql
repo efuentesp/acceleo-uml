@@ -1,8 +1,0 @@
-
-DROP TABLE IF EXISTS agencia;
-
-CREATE TABLE agencia ( id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-						nombre VARCHAR(100)
-,						pais VARCHAR(100)
-);
-
