@@ -3,73 +3,81 @@
 	<uml:Model xmi:id="_GbyPcBgjEeiXUO3vwBykwQ" name="Angular">
 	<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo">
 		<packagedElement xmi:type="uml:Class" xmi:id="_complexity1234" name="complexity">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pms12345p" name="ms" lowerValue="Muy Simple" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_ps12345p" name="s" lowerValue="Simple" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pm12345p" name="m" lowerValue="Mediano" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pc12345p" name="c" lowerValue="Complejo" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmc12345p" name="mc" lowerValue="Muy Complejo" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pms12345p" name="ms" default="Muy Simple" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_ps12345p" name="s" default="Simple" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pm12345p" name="m" default="Mediano" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pc12345p" name="c" default="Complejo" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmc12345p" name="mc" default="Muy Complejo" type="_hradio12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_repository1234" name="repository">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2_412345p" name="e2_4" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe5_712345p" name="e5_7" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe8_1012345p" name="e8_10" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe11_2512345p" name="e11_25" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2_412345p" name="e2_4" default="De 2 a 4" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe5_712345p" name="e5_7" default="De 5 a 7" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe8_1012345p" name="e8_10" default="De 8 a 10" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pe11_2512345p" name="e11_25" default="De 11 a 25" type="_hradio12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_data1234" name="data">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd0_1012345p" name="d0_10"  type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd10_2512345p" name="d10_25" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd26_4012345p" name="d26_40" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd41_10012345p" name="d41_100" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd0_1012345p" name="d0_10" default="De 0 a 10" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd10_2512345p" name="d10_25" default="De 10 a 25" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd26_4012345p" name="d26_40" default="De 26 a 40" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pd41_10012345p" name="d41_100" default="De 41 a 100" type="_hradio12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_algorithmtype1234" name="algorithmtype">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pa112345p" name="a1" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pa212345p" name="a2" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pa112345p" name="a1" default="Mover informaci�n" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pa212345p" name="a2" default="Calculos Aritm�ticos" type="_hradio12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_reusability1234" name="reusability">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pr112345p" name="r1" type="_hradio12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pr212345p" name="r2" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pr112345p" name="r1" default="L�gica �nica" type="_hradio12345"/>
+			<ownedAttribute xmi:type="uml:Property" xmi:id="_pr212345p" name="r2" default="Reutiliza dise�o" type="_hradio12345"/>
 		 </packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_application1234" name="application">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" default="Nombre" type="_htext12345"/>
 		</packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_module1234" name="module">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" type="_application12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htext12345"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" default="Aplicaci�n" type="_application12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" default="Nombre" type="_htext12345"/>
 		</packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_menu1234" name="menu">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module" type="_module12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p" name="path" type="_htext12345"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module" default="Modulo" type="_module12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p" name="path" default="Opci�n de Men�" type="_htext12345"/>
 		</packagedElement>
 		<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice1234" name="functionalservice">
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p" name="menu" type="_menu12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescription12345p" name="description" type="_htext12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_psize12345p" name="size" type="_hdouble12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p" name="complexity" type="_complexity1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_prepetitions12345p" name="repetitions" type="_hinteger12345"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_prepository12345p" name="repository" type="_repository1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pdata12345p" name="data" type="_data1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_palgorithmtype12345p" name="algorithmtype" type="_algorithmtype1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_preusability12345p" name="reusability" type="_reusability1234"/>
-			<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomments12345p" name="comments" type="_htextlong12345"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p" name="menu" default="Menu" type="_menu12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" default="Nombre" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescription12345p" name="description" default="Description" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psize12345p" name="size" default="Tama�o" type="_hdouble12345"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p" name="complexity" default="Complejidad" type="_complexity1234"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_prepetitions12345p" name="repetitions" default="Repeticiones" type="_hinteger12345"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_prepository12345p" name="repository" default="Entidades" type="_repository1234"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pdata12345p" name="data" default="Datos" type="_data1234"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_palgorithmtype12345p" name="algorithmtype" default="Tipo de Algoritmo" type="_algorithmtype1234"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_preusability12345p" name="reusability" default="Reusabilidad" type="_reusability1234"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomments12345p" name="comments" default="Comentarios" type="_htextlong12345"/>
 		</packagedElement>
 		
-		<packagedElement xmi:type="uml:Class" xmi:id="_application12345" name="modalapplication">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="tipo" type="_application1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_module12345" name="modalmodule">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="tipo" type="_module1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_menu12345" name="modalmenu">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p" name="tipo" type="_menu1234"/>
-		 </packagedElement>
-		<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice12345" name="modalfunctionalservice">
-		       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pfunctionalservice12345p" name="tipo" type="_functionalservice1234"/>
-		 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_application12345" name="modalapplication" >
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" type="_application1234"/>
+			      	 </packagedElement>
+		      	
+		
+			<packagedElement xmi:type="uml:Class" xmi:id="_module12345" name="modalmodule" >
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module" type="_module1234"/>
+			      	 </packagedElement>
+		      	
+		
+			<packagedElement xmi:type="uml:Class" xmi:id="_menu12345" name="modalmenu" >
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p" name="menu" type="_menu1234"/>
+			      	 </packagedElement>
+		      	
+		
+			<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice12345" name="modalfunctionalservice" >
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pfunctionalservice12345p" name="functionalservice" type="_functionalservice1234"/>
+			      	 </packagedElement>
+		      	
+		
 		
 	<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VI_tYSPtEeihHKoXXUFGQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -269,6 +277,21 @@
    	   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
    	   	     </ownedAttribute>
    	   	   </packagedElement>
+   	   	   
+  	   	   <packagedElement xmi:type="uml:Class" xmi:id="_hemail12345" name="HEmail">
+  	   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+  	   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  	   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="email"/>
+  	   	     </ownedAttribute>
+  	   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+  	   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  	   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+  	   	     </ownedAttribute>
+  	   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+  	   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  	   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(128)"/>
+  	   	     </ownedAttribute>
+  	   	   </packagedElement>
 	 
 	 </packagedElement>
 	 
