@@ -31,6 +31,7 @@
 			    <ownedAttribute xmi:type="uml:Property" xmi:id="_palgorithmtype12345p"  name="algorithmtype" default="Tipo de Algoritmo"  lower="10" type="_algorithmtype1234"/>
 			    <ownedAttribute xmi:type="uml:Property" xmi:id="_preusability12345p"    name="reusability"   default="Reusabilidad"  lower="11" type="_reusability1234"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomments12345p"       name="comments"      default="Comentarios"  lower="12" type="_htextlong12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfunctionalservice12345p" name="functionalservice"  type="_functionalservice123456"/>
 		</packagedElement>
 		
 		<packagedElement xmi:type="uml:Class" xmi:id="_complexity1234" name="radiocomplexity">
