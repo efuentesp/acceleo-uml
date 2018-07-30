@@ -488,6 +488,24 @@
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         </eStructuralFeatures>
       </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2k81xybaEeiTkOMT9MrOGg" name="Display_Result" eSuperTypes="_2k80eybaEeiTkOMT9MrOGg">
+        <eAnnotations xmi:id="_2k81yCbaEeiTkOMT9MrOGg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qQOTcCbaEeiTkOMT9MrOGg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2k81ySbaEeiTkOMT9MrOGg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2k81xybaEeiTkOMT9MrOGg" name="Exposed_Filter" eSuperTypes="_2k80eybaEeiTkOMT9MrOGg">
+        <eAnnotations xmi:id="_2k81yCbaEeiTkOMT9MrOGg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qQOTcCbaEeiTkOMT9MrOGg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2k81ySbaEeiTkOMT9MrOGg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2k81xybaEeiTkOMT9MrOGg" name="Required" eSuperTypes="_2k80eybaEeiTkOMT9MrOGg">
+        <eAnnotations xmi:id="_2k81yCbaEeiTkOMT9MrOGg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_qQOTcCbaEeiTkOMT9MrOGg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2k81ySbaEeiTkOMT9MrOGg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
     </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_Q5PjgCYeEeiTkOMT9MrOGg" name="profileSTK" nsURI="http:///schemas/profileSTK/_Q5OVYCYeEeiTkOMT9MrOGg/27" nsPrefix="profileSTK">
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_Q5QKkCYeEeiTkOMT9MrOGg" name="Structure" abstract="true">
