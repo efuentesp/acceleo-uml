@@ -81,49 +81,50 @@
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_application123456" name="display_resultapplication" >
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345" />
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" lower="1" type="_htext12345" />
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" default="Nombre" lower="2" type="_htext12345"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_module123456" name="display_resultmodule" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" type="_application12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"       name="code"        type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"       name="name"        type="_htext12345"/>			
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" default="Aplicación" lower="1" type="_application12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"       name="code"        default="Clave" lower="2" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"       name="name"        default="Nombre" lower="3" type="_htext12345"/>		
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_menu123456" name="display_resultmenu" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module"  type="_module12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"   name="code"    type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p"   name="path"    type="_htext12345"/>			
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module"  default="Módulo" lower="1" type="_module12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"   name="code"    default="Clave" lower="2" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p"   name="path"    default="Opción de Menú" lower="3" type="_htext12345"/>		
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice123456" name="display_resultfunctionalservice" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p"           name="menu"           type="_menu12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"           name="code"           type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"           name="name"           type="_htext12345" />
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_psize12345p"           name="size"           type="_hdouble12345"/>
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p"     name="complexity"     type="_complexity1234"/>			
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p"           name="menu"  default="Menú"  lower="1"       type="_menu12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"           name="code"  default="Clave"  lower="2"       type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"           name="name"  default="Nombre"  lower="3"       type="_htext12345" />
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psize12345p"           name="size"         default="Tamaño"   lower="5" type="_hdouble12345"/>
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p"     name="complexity"   default="Complejidad"   lower="6" type="_complexity1234"/>	
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_application1234567" name="exposed_filterapplication" >
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" type="_htext12345" />
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p" name="code" default="Clave" lower="1" type="_htext12345" />
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p" name="name" default="Nombre" lower="2" type="_htext12345"/>
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_module1234567" name="exposed_filtermodule" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" type="_application12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"       name="code"        type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"       name="name"        type="_htext12345"/>			
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_papplication12345p" name="application" default="Aplicación" lower="1" type="_application12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"       name="code"        default="Clave" lower="2" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"       name="name"        default="Nombre" lower="3" type="_htext12345"/>		
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_menu1234567" name="exposed_filtermenu" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module"  type="_module12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"   name="code"    type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p"   name="path"    type="_htext12345"/>			
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmodule12345p" name="module"  default="Módulo" lower="1" type="_module12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"   name="code"    default="Clave" lower="2" type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppath12345p"   name="path"    default="Opción de Menú" lower="3" type="_htext12345"/>	
 			</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice1234567" name="exposed_filterfunctionalservice" >
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p"           name="menu"           type="_menu12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"           name="code"           type="_htext12345"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"           name="name"           type="_htext12345" />
-			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p"     name="complexity"     type="_complexity1234"/>			
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmenu12345p"           name="menu"  default="Menú"  lower="1"       type="_menu12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcode12345p"           name="code"  default="Clave"  lower="2"       type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname12345p"           name="name"  default="Nombre"  lower="3"       type="_htext12345" />
+			    <ownedAttribute xmi:type="uml:Property" xmi:id="_pcomplexity12345p"     name="complexity"   default="Complejidad"   lower="6" type="_complexity1234"/>			
 			</packagedElement>
+			
 			<packagedElement xmi:type="uml:Class" xmi:id="_functionalservice12345678" name="requiredfunctionalservice" >
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescription12345p"    name="description"    type="_htext12345"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescription12345p"    name="description"  default="Description" lower="4"  type="_htext12345"/>
 			</packagedElement>
 		      	
 	<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
