@@ -1,0 +1,501 @@
+module Servicios {
+//Si creo dos rdl, uno para catalogos y otro para servicios, no se genera la documentación completa.
+
+	enum Genero {
+		M: "Masculino"
+		F: "Femenino"
+	}
+	
+	enum TipoEmpleado { 
+		P: "Planta"
+		C: "Confianza"
+		T: "Temporal"
+		B: "Becario"
+	}
+	
+	enum Banco {
+		B1: "HSBC"
+		B2: "SANTANDER"
+		B3: "BBVA Bancomer"
+		B4: "BANAMEX"
+		B5: "BANORTE"
+	}
+		
+	enum Rol {
+		E: "Ejecutivo"
+		A: "Administrador"
+		S: "Socio"
+	}
+	
+	enum TipoAhorro {
+		V: "Ahorro a la vista"
+		M1: "Plazo fijo 1 mes"
+		M3: "Plazo fijo 3 meses"
+		M6: "Plazo fijo 6 meses"
+		FAP: "Patrimonial FAP"
+		NOV: "Ahorro a noviembre"
+		ESP1: "Especial anual"
+		ESP2: "Especial educación"
+	}
+	
+	enum TipoAportacion {
+		CF: "Cuota fija quincenal"
+		FA: "Especial fondo de ahorro"
+		UT: "Especial utilidades"
+		AG: "Especial aguinaldo"
+	}
+		
+	entity Empresa { 
+		scaffold (add: true, edit: true, delete: true, search: Complex )
+       	glossary ( name: "Empresa", description: "Catálogo de empresas que tienen convenio con la caja de ahorro" )
+       	
+        field Clave: Text {
+       		glossary (name: "Clave", description: "Clave de la empresa")
+      		constraints (unique: true, required: true, min_length: 10, max_length: 10)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+ 
+         field RazonSocial: Text {
+       		glossary (name: "Razón Social", description: "Razón social de la empresa")
+      		constraints (unique: false, required: true, min_length: 50, max_length: 100)
+       		widget ( exposed_filter: true, display_result: false)
+       		data (domain: "App::name")
+       	}
+ 
+          field NombreCorto: Text {
+       		glossary (name: "Nombre Corto", description: "Nombre corto de la empresa")
+      		constraints (unique: false, required: true, min_length: 15, max_length: 15)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+       	      	      	
+       	def toString {
+       		return Clave
+       }
+	}      
+		
+	entity Departamento {
+		scaffold (add: true, edit: true, search: Simple )
+       	glossary ( name: "Departamento", description: "Catálogo de departamentos por empresa" )
+       	
+        reference ClaveEmpresa : Empresa [1..*]{
+       		glossary (name: "Empresa", description: "Clave de la empresa")
+      		constraints (unique: true, required: true, min_length: 10, max_length: 10)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+        field Nombre: Text {
+       		glossary (name: "Nombre", description: "Nombre del departamento")
+      		constraints (unique: false, required: true, min_length: 15, max_length: 15)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+ 
+         field Representante: Text {
+       		glossary (name: "Respresentante", description: "Nombre del representante del departamento")
+      		constraints (unique: false, required: true, min_length: 30, max_length: 30)
+       		widget ( exposed_filter: true, display_result: false)
+       		data (domain: "App::name")
+       	}
+       	      	      	      	
+       	def toString {
+       		return Nombre
+       }
+	}	
+	
+	entity Planta {
+		scaffold (add: true, edit: true, delete: true, search: Simple )
+       	glossary ( name: "Planta", description: "Catálogo de plantas por empresa" )
+       	
+        reference ClaveEmpresa : Empresa [1..*]{
+       		glossary (name: "Clave Empresa", description: "Clave de la empresa")
+      		constraints (unique: true, required: true, min_length: 10, max_length: 10)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+       	
+        field Nombre: Text {
+       		glossary (name: "Nombre", description: "Nombre de la planta")
+      		constraints (unique: false, required: true, min_length: 15, max_length: 15)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+ 
+         field Direccion: Text {
+       		glossary (name: "Dirección", description: "Dirección de la planta")
+      		constraints (unique: false, required: true, min_length: 50, max_length: 100)
+       		widget ( exposed_filter: false, display_result: false)
+       		data (domain: "Lorem::paragraph")
+       	}
+
+         field DiaDePago: Integer {
+       		glossary (name: "Día de pago", description: "Día del mes en que se paga en la planta: 5, 20, 15, 30")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: false)
+       		data (domain: "Bank::accountNumber")
+       	}
+		//Marca error al usar tipo de dato CURRENCY
+         field Maximo: Decimal {
+       		glossary (name: "Préstamo máximo", description: "Monto máximo de préstamo a los socios que pertenecen a esta planta")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: false)
+       	}
+    
+         field Minimo: Decimal {
+       		glossary (name: "Préstamo mínimo", description: "Monto mínimo de préstamo a los socios que pertenecen a esta planta")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: false)
+       	}
+       	
+       	def toString {
+       		return Nombre
+       }
+	}
+	
+	entity TasaDeInteres {
+		scaffold (add: true, edit: true, search: Simple )
+       	glossary ( name: "Tasa de interés", description: "Catálogo de tasas de interés por empresa" )
+       	
+        reference ClaveEmpresa : Empresa [1..*]{
+       		glossary (name: "Empresa", description: "Clave de la empresa")
+      		constraints (unique: true, required: true, min_length: 10, max_length: 10)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+        field FechaInicio: Date {
+       		glossary (name: "Fecha Inicio", description: "Fecha de Inicio de vigencia de la tasa")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+ 
+        field FechaFin: Date {
+       		glossary (name: "Fecha Fin", description: "Fecha de Fin de vigencia de la tasa")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+       	
+       	field Tasa: Decimal {
+       		glossary (name: "Tasa", description: "Tasa de interés")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+       	      	      	      	
+       	def toString {
+       		return FechaInicio
+       }
+	}	
+	
+		
+	entity Socio {
+		scaffold (add: true, edit: true, search: Complex )
+       	glossary ( name: "Socio", description: "Información de los socios de la caja de ahorro" )
+       	
+        field Numero: Integer {
+        	glossary (name: "Numero de socio", description: "Identifica de manera unica a cada socio")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+        }
+        
+        field Nombre: Text {
+       		glossary (name: "Nombre", description: "Nombre del socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Name::firstName")
+       	}
+       	
+        field ApellidoPaterno: Text {
+       		glossary (name: "Apellido Paterno", description: "Apellido paterno del socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Name::lastName")
+       	}
+       	
+       	field ApellidoMaterno: Text {
+       		glossary (name: "Apellido Materno", description: "Apellido materno del socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Name::lastName")
+       	}
+       	
+       	reference Es: Genero [1..1] {
+       		glossary (name: "Género", description: "Género del socio. (M)asculino, (F)emenino")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	field Correo: Text {
+       		glossary (name: "Correo electrónico", description: "Dirección de email del socio")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: false, display_result: false)
+       	}
+       	
+       	field Telefono: Text {
+       		glossary (name: "Número telefónico", description: "Número telefónico del socio")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: false, display_result: true)
+       		data (domain: "Phone::phoneNumber")       		
+       	}
+       	
+       	reference Tipo: TipoEmpleado [1..1] {
+       		glossary (name: "Tipo empleado", description: "Tipo de empleado del socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+        reference Pertenece : Departamento [1..1]{
+       		glossary (name: "Departamento", description: "Nombre del departamento en donde trabaja el socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+        
+         reference Labora : Planta [1..1]{
+       		glossary (name: "Planta", description: "Nombre de la planta en donde trabaja el socio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       		data (domain: "App::name")
+       	}
+       	      	      	      	
+       	def toString {
+       		return Numero
+       }
+	}	
+	
+	entity CuentaBancaria {
+		scaffold (add: true, edit: true, search: Simple )
+       	glossary ( name: "Cuenta Bancaria", description: "Información de la cuenta bancaria del socio" )
+    
+        reference De: Socio [1..1] {
+        	glossary (name: "Numero de socio", description: "Socio al que corresponde la cuenta")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+      	field Cuenta: Integer {
+       		glossary (name: "Número de cuenta", description: "Número de cuenta bancaria")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Bank::accountNumber")
+       	}
+     	      	
+     	field Clabe: Integer {
+       		glossary (name: "Cuenta clabe", description: "Clabe interbancaria")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       		data (domain: "Business::creditCardNumber")
+       	}
+       	//Aunque este campo esta marcado como para incluirse en los filtros, no se muestra
+       	reference EmitidaPor: Banco [1..1]{
+       		glossary (name: "Banco Emisor", description: "Banco Emisor de la cuenta")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	} 
+       	      	      	
+       	def toString {
+       		return Cuenta
+       }
+	}	
+	
+	entity Domicilio {
+		scaffold (add: true, edit: true, search: Complex)
+       	glossary ( name: "Domicilio", description: "Domicilios de los socios" )
+    
+        reference De: Socio [1..1] {
+        	glossary (name: "Numero de socio", description: "Socio al que corresponde el domicilio")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+      	field Calle: Integer {
+       		glossary (name: "Calle", description: "Calle, numero y colonia")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       		data (domain: "Lorem::paragraph")
+       	}
+     	      	
+        field CP: Text {
+       		glossary (name: "Código Postal", description: "Código postal del domicilio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Address::zipCode")
+       	}	
+       	     
+       	field Ciudad: Text {
+       		glossary (name: "Ciudad", description: "Ciudad del domicilio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Address::city")
+       	}	
+  
+        field Estado: Text {
+       		glossary (name: "Estado", description: "Estado del domicilio")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Address::state")
+       	}	     	      	      	
+       	def toString {
+       		return CP
+       }
+	}
+
+	entity Perfil  {
+		scaffold (add: true, edit: true, search: Simple)
+       	glossary ( name: "Perfil", description: "Perfil del socio para el uso del sistema" )
+		
+		reference De: Socio [1..1] {
+        	glossary (name: "Numero de socio", description: "Socio al que corresponde el perfil")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+       	
+		field Usuario: Text {
+       		glossary (name: "Usuario", description: "Usuario para autenticarse en el sistema de ahorro")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")			
+		}
+		
+		field NIP: Text {
+       		glossary (name: "Contraseña", description: "Contraseña para autenticarse en el sistema de ahorro")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       		data (domain: "Internet::password")			
+		}
+		
+       	def toString {
+       		return Usuario
+       }	
+	}
+	
+	entity CuentaDeAhorro {
+		scaffold (add: true, edit: true, search: Simple )
+       	glossary ( name: "Cuenta de ahorro", description: "Información de la cuenta de ahorro del socio" )
+    
+        reference De: Socio [1..1] {
+        	glossary (name: "Numero de socio", description: "Socio al que corresponde la cuenta")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+      	field Numero: Integer {
+       		glossary (name: "Número de cuenta", description: "Número de cuenta de ahorro")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Bank::accountNumber")
+       	}
+       	
+       	reference Tipo : TipoAhorro [1..1] {
+       		glossary (name: "Tipo", description: "Tipo de la cuenta de ahorro")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	field FechaContratacion: Date {
+       		glossary (name: "Fecha de contratación", description: "Fecha de contratación del ahorro")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+
+       	field FechaVencimiento: Date {
+       		glossary (name: "Fecha de vencimiento", description: "Fecha de vencimiento del ahorro")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	field FechaDisponibilidad: Date {
+       		glossary (name: "Fecha de disponibilidad", description: "Fecha de disponibilidad del ahorro")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	/* Campos calculados
+       	calcField  SaldoSinIntereses {
+       		glossary (name: "sum(Aportacion.monto)", description: "El saldo es la suma del monto de todas las aportaciones a la cuenta de ahorro")
+       	}
+       	calcField  InteresAcumulado {
+       		glossary (name: "sum (Interes.monto)", description: "Suma de todos los intereses cargados a la cuenta de ahorro")
+       	}
+       	calcField  saldoConInteres {
+       		glossary (name: "SaldoSinIntereses + InteresAcumulado", description: "Suma aportaciones mas intereses")
+       	}
+       	*/
+       	       	
+       	def toString {
+       		return Numero
+       }
+     }
+       	
+	entity Aportacion {
+		scaffold (add: true, edit: true, search: Simple )
+       	glossary ( name: "Aportacion", description: "Aportaciones que se han realizado a la cuenta de ahorro" )
+    
+        reference Para: CuentaDeAhorro [1..1] {
+        	glossary (name: "Cuenta de ahorro", description: "Cuenta de ahorro a la que corresponde la aportación")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+       	field Fecha : Date {
+       		glossary (name: "Fecha", description: "Fecha del movimiento de aportación")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	reference Concepto : TipoAportacion [1..1] {
+       		glossary (name: "Concepto", description: "Tipo de aportación que origina el movimiento")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	field Monto: Integer {
+       		glossary (name: "Monto", description: "Importe de la aportación")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+       	
+       	def toString {
+       		return Concepto
+       }
+              
+	}
+       
+	entity Interes {
+		scaffold (add: false, edit: false, search: Simple )
+       	glossary ( name: "Intereses", description: "Movimientos por pago de intereses a la cuenta de ahorro" )
+    
+        reference Para: CuentaDeAhorro [1..1] {
+        	glossary (name: "Cuenta de ahorro", description: "Cuenta de ahorro a la que corresponde el interés")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+       	field Fecha : Date {
+       		glossary (name: "Fecha", description: "Fecha del movimiento de interes")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       	}
+       	
+       	field Monto: Integer {
+       		glossary (name: "Monto", description: "Importe de los inteses")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+       	
+       	def toString {
+       		return Fecha
+       }
+     
+     }
+}
+

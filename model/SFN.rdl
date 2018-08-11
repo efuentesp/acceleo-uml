@@ -1,0 +1,115 @@
+module SFN {
+       
+       enum Complexity {
+              MS : "Muy Simple"
+              S: "Simple"
+              M: "Mediano"
+              C: "Complejo"
+              MC: "Muy Complejo"
+       }
+       
+       enum Repository {
+              E2_4: "De 2 a 4"
+              E5_7: "De 5 a 7"
+              E8_10: "De 8 a 10"
+              E11_25: "De 11 a 25"
+       }
+       
+       enum Data {
+              D0_10: "De 0 a 10"
+              D10_25: "De 10 a 25"
+              D26_40: "De 26 a 40"
+              D41_100: "De 41 a 100"
+       }
+       
+       enum AlgorithmType {
+              A1: "Mover información"
+              A2: "Calculos Aritméticos"
+       }
+       
+       enum Reusability {
+              R1: "Lógica única"
+              R2: "Reutiliza diseño"
+       }
+       
+              entity Menu {
+              scaffold ( add: true, delete: true, search: Simple )
+              glossary (name: "Menu", description: "Menu")
+              field Code: Text {
+                     glossary (name: "Clave", description: "Clave del Menu")
+                     constraints ( unique: true )
+                     widget( exposed_filter: true, display_result: true )
+                     data (domain: "Lorem::code5")
+              }
+              field Path: Text {
+                     glossary (name: "Opción de Menú", description: "Ruta completa para llegar a la Opción de Menú")
+                     constraints ( unique: true )
+                     widget( exposed_filter: true, display_result: true )
+                     data (domain: "App::name")
+              }
+              
+              def toString {
+                     return Path
+              }
+       }
+       
+        entity FunctionalService {
+              scaffold ( add: true, edit: true, delete:true, search: Simple )
+              glossary (name: "Servicio Funcional", description: "Servicio Funcional")
+              reference Menu: Menu [1..1] {
+                     glossary (name: "Menu", description: "Menu")
+                     widget( exposed_filter: true, display_result: true )
+              }
+              field Code: Text {
+                     glossary (name: "Clave", description: "Clave del Modulo")
+                     constraints ( unique: true )
+                     widget( exposed_filter: true, display_result: true )
+                     data (domain: "Lorem::code5")
+              }
+              field Name: Text {
+                     glossary (name: "Nombre", description: "Nombre del Servicio Funcional")
+                     widget( exposed_filter: true, display_result: true )
+                     data (domain: "App::name")
+              }
+              field Description: Text {
+                     glossary (name: "Description", description: "Descripción del Servicio Funcional")
+                     constraints ( required: false )
+                     data (domain: "Lorem::paragraph")
+              }
+              field Size: Decimal {
+                     glossary (name: "Tamaño", description: "Servicios Funcionales Normalizados (calculados)")
+                     widget (display_result: true)
+                     data (domain: "Number::randomNumberLong")
+              }
+              reference Complexity: Complexity [1..1] {
+                     glossary (name: "Complejidad", description: "Complejidad del Servicio Funcional (calculado)")
+                     widget( exposed_filter: true, display_result: true )
+              }
+              field Repetitions: Integer {
+                     glossary (name: "Repeticiones", description: "Número de Repeticiones del Servicio")
+              }
+              reference Repository: Repository [1..1] {
+                     glossary (name: "Entidades", description: "Cantidad de Entidades del Servicio Funcional")
+              }
+              reference Data: Data [1..1] {
+                     glossary (name: "Datos", description: "Cantidad de Datos del Servicio Funcional")
+              }
+              reference AlgorithmType: AlgorithmType [1..1] {
+                     glossary (name: "Tipo de Algoritmo", description: "Tipo de Algoritmos del Servicio Funcional")
+              }
+              reference Reusability: Reusability [1..1] {
+                     glossary (name: "Reusabilidad", description: "Tipo de Reusabilidad del Servicio Funcional")
+              }
+              field Comments: LongText {
+                     glossary (name: "Comentarios", description: "Comentarios sobre del Servicio Funcional")
+                     data (domain: "Lorem::longParagraph")
+              }
+              
+              def toString {
+                     return Name
+              }
+       }
+       
+}
+
+

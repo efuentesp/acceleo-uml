@@ -1,0 +1,144 @@
+module Gob.Imss.Pensiones {
+       enum Genero {
+              MALE: "Masculino"
+              FEMALE: "Femenino"
+       }
+       
+       enum Parentesco {
+              CONYUGE: "Conyuge"
+              HIJO: "Hijo"
+              ASCENDIENTE: "Padre/Madre"
+       }
+       
+       entity Direccion {
+              field Calle : Text
+              field Numero : Text
+              
+              def toString {
+                     return Calle
+              }
+       }
+       
+       entity Afiliado {
+              scaffold ( add: true, edit: true, delete: true, search: Simple)
+              glossary ( name: "Afiliado", description: "Se refiere a las personas que están aseguradas en el IMSS de manera directa como tituleres" )
+              
+           field Nss : Text {
+               glossary ( name: "NSS", description: "Número de Seguridad Social")
+               constraints (unique: true, min_length: 10, max_length: 10)
+               widget ( exposed_filter: true )
+           }
+           field Nombre : Text {
+               glossary ( name: "Nombre(s)", description: "Nombre o nombres del Afiliado" )
+               widget ( exposed_filter: true )
+           }
+           field Apellido_paterno : Text {
+               glossary ( name: "Apellido Paterno", description: "Apellido Paterno del Afiliado" )
+               widget ( exposed_filter: true )
+           }
+           field Apellido_materno : Text {
+               glossary ( name: "Apellido Materno", description: "Apellido Materno del Afiliado" )
+           }
+           reference Genero : Genero [1..1] {
+               glossary ( name: "Género", description: "Sexo de la Persona")
+               widget ( type: Option )
+           }
+           reference Beneficiarios: Beneficiario [1..*] {
+              glossary ( name: "Beneficiarios", description: "Beneficiarios registrados")
+               widget ( type: SelectList, exposed_filter: true )
+           }
+           field Observaciones: LongText {
+              glossary ( name: "Observaciones", description: "Observaciones sobre el Afiliado")
+           }
+           field Fecha_afiliacion: Date
+           field Foto: Image {
+              glossary ( name: "Foto", description: "Foto del Afiliado")
+           }
+           field Acta_nacimiento: File {
+              glossary ( name: "Acta de Nacimiento", description: "Copia certificada del Acta de Nacimiento" )
+           }
+           field Correo: Email {
+              glossary ( name: "Email", description: "Correo electrónico de contacto" )
+           }
+           field Semanas_cotizadas: Integer {
+              glossary ( name: "Semanas Cotizadas", description: "Semanas Cotizadas en el IMSS" )
+              constraints (min_length: 500, max_length: 1000)
+           }
+       //    field monto_pension: Currency {
+       //    glossary ( name: "Promedio Salario", description: "Promedio del salario de los últimos 5 años"}
+       //    }
+           field Numero: Decimal {
+              glossary ( name: "Dato Decimal", description: "Dato decimal de ejemplo" )
+           }
+              reference DireccionCorreo: Direccion [1..1]
+              reference Domicilio: Direccion [1..1]
+              
+              def toString {
+                     return Nss
+              }
+       }
+       
+       entity TipoPension {
+           field Clave : Text {
+               constraints ( unique: true )
+               widget ( exposed_filter: true )
+           }
+           field Nombre : Text {
+              widget ( exposed_filter: true )
+           }
+           
+           def toString {
+              return Clave
+           }
+       }
+       
+       entity SolicitudPension {
+           field Numero : Integer {
+               constraints ( unique: true )
+               widget ( exposed_filter: true )
+           }
+           reference Afiliado : Afiliado [1..1] {
+               widget ( type: Autocomplete, exposed_filter: true )
+           }
+           reference Tipo : TipoPension [1..1] {
+               widget ( type: SelectList, exposed_filter: true )
+           }
+           field Fecha_solicitud : Date {
+              glossary ( name: "Fecha Solicitud", description: "Fecha en la que se solició la Pensión")
+           }
+           field Observaciones : LongText {
+               constraints ( required: false, max_length: 125 )
+           }
+              
+              def toString {
+                     return Numero
+              }
+       }
+       
+       entity Beneficiario {
+              field Curp: Text {
+                     glossary ( name: "CURP", description: "CURP" )
+                     constraints ( unique: true )
+                     widget ( exposed_filter: true )
+              }
+           field Nombre : Text {
+               glossary ( name: "Nombre(s)", description: "Nombre o nombres del Afiliado" )
+           }
+           field Apellido_paterno : Text {
+               glossary ( name: "Apellido Paterno", description: "Apellido Paterno del Afiliado" )
+           }
+           field Apellido_materno : Text {
+               glossary ( name: "Apellido Materno", description: "Apellido Materno del Afiliado" )
+           }
+           field Fecha_nacimiento : Date
+           reference Parentesco: Parentesco [1..1] {
+              glossary ( name: "Parentesco", description: "Parentesco con el Afiliado" )
+               widget ( type: Option )
+           }
+           reference Afiliado : Afiliado [1..1]
+           
+           def toString {
+              return Curp
+           }
+       }
+}

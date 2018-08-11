@@ -1,0 +1,110 @@
+module Banorte.Siab {
+       entity Cliente {
+              db_map (table: "CLIENTE")
+              
+              field ClienteNum: Integer {
+                     glossary (name: "Cliente", description: "")
+                     widget (exposed_filter: true)
+                     db_map (field: "CLIENTE_NUM")
+              }
+              field ClienteFechaInicio: Date {
+                     glossary (name: "Inicio de Operaciones", description: "")
+                     widget (exposed_filter: true)
+              }
+              reference GrupoCliente: Grupo_Cliente [1..1] {
+                     glossary (name: "Grupo", description: "")
+              }
+              field ClienteNombre: Text {
+                     glossary (name: "Depositante", description: "")
+                     widget (exposed_filter: true)
+                     data (domain: "Name::firstName")
+              }
+              field ClienteAp: Text {
+                     glossary (name: "Apellido Paterno", description: "")
+                     widget (exposed_filter: true)
+                     data (domain: "Name::lastName")
+              }
+              field ClienteAm: Text {
+                     glossary (name: "Apellido Materno", description: "")
+                     widget (exposed_filter: true)
+                     data (domain: "Name::lastName")
+              }
+              reference CuentaBan: Cuentas_Ban [1..1] {
+                     glossary (name: "Cargar Facturas a", description: "")
+              }
+              field ClienteObs: LongText {
+                     glossary (name: "Observaciones", description: "")
+                     data (domain: "Lorem::longParagraph")
+              }
+              reference Status: Status [1..1] {
+                     glossary (name: "Status", description: "")
+                     widget (exposed_filter: true)
+              }
+              field FechaUsuReg: Date
+              field UsuReg: Text
+              field FechaUsoMod: Date
+              field UsuMod: Text
+              field FechaUsuCan: Date
+              field UsuCan: Text
+              field EnviadosAp: Integer
+              
+              def toString {
+                     return ClienteNombre
+              }
+       }
+       
+       entity Cuentas_Ban {
+              field CbanCuenta: Text {
+                     widget (exposed_filter: true)
+                     data (domain: "Bank::accountNumber")
+              }
+              field CbanBeneficiario: Text {
+                     widget (exposed_filter: true)
+                     data (domain: "Name::fullName")
+              }
+              field CbanFechaIni: Date
+              field CbanFechaFin: Date
+              reference Status: Status [1..1]
+              
+              def toString {
+                     return CbanCuenta
+              }
+       }
+       
+       entity Grupo_Cliente {
+              db_map (table: "GPO_CLIENTE")
+              field GrupoClienteNum: Integer {
+                     widget (exposed_filter: true)
+              }
+              field GrupoClienteDes: Text {
+                     widget (exposed_filter: true)
+              }
+              field GrupoClienteAbrev: Text
+              field GrupoClienteFechaIni: Date
+              field GrupoClienteFechaFin: Date
+              //reference Cliente: Cliente [1..1]
+              
+              def toString {
+                     return GrupoClienteDes
+              }
+       }
+       
+       entity Status {
+              field StatusNum: Integer {
+                     widget (exposed_filter: true)
+              }
+              field StatusDes: Text {
+                     widget (exposed_filter: true)
+              }
+              field StatusTabla: Text
+              field StatusAbrev: Text
+              field StatusObs: Text
+              field StatusFecReg: Date
+              field StatusFecBaja: Date
+              field Status: Integer
+              
+              def toString {
+                     return StatusDes
+              }
+       }       
+}
