@@ -59,7 +59,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pempresaexposedfilter"        name="empresa"        type="_empresaSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pempresadisplaymodal"         name="empresa"        type="_empresaSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pempresaentityname"           name="empresa"        type="_empresaSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pempresascaffold"             name="empresa"        type="_empresaSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_empresaSTKClassExposedFilter" name="exposedfilterempresa" >
@@ -89,6 +89,11 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="empresa" default="Empresa" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_empresaSTKClassScaffold" name="scaffoldempresa">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_departamentoSTKClass" name="departamento">
 				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppertenece" name="pertenece" default="Empresa" lower="1" type="_empresaSTKClassModal"/>
@@ -98,7 +103,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdepartamentoexposedfilter"        name="departamento"        type="_departamentoSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdepartamentodisplaymodal"         name="departamento"        type="_departamentoSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdepartamentoentityname"           name="departamento"        type="_departamentoSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdepartamentoscaffold"             name="departamento"        type="_departamentoSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_departamentoSTKClassExposedFilter" name="exposedfilterdepartamento" >
@@ -128,6 +133,10 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="departamento" default="Departamento" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_departamentoSTKClassScaffold" name="scaffolddepartamento">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_plantaSTKClass" name="planta">
 				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppertenece" name="pertenece" default="Clave Empresa" lower="1" type="_empresaSTKClassModal"/>
@@ -140,7 +149,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pplantaexposedfilter"        name="planta"        type="_plantaSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pplantadisplaymodal"         name="planta"        type="_plantaSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pplantaentityname"           name="planta"        type="_plantaSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pplantascaffold"             name="planta"        type="_plantaSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_plantaSTKClassExposedFilter" name="exposedfilterplanta" >
@@ -174,6 +183,11 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="planta" default="Planta" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_plantaSTKClassScaffold" name="scaffoldplanta">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_tasadeinteresSTKClass" name="tasadeinteres">
 				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Empresa" lower="1" type="_empresaSTKClassModal"/>
@@ -184,7 +198,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptasadeinteresexposedfilter"        name="tasadeinteres"        type="_tasadeinteresSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptasadeinteresdisplaymodal"         name="tasadeinteres"        type="_tasadeinteresSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptasadeinteresentityname"           name="tasadeinteres"        type="_tasadeinteresSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptasadeinteresscaffold"             name="tasadeinteres"        type="_tasadeinteresSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_tasadeinteresSTKClassExposedFilter" name="exposedfiltertasadeinteres" >
@@ -214,6 +228,10 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="tasadeinteres" default="Tasa de interes" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_tasadeinteresSTKClassScaffold" name="scaffoldtasadeinteres">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClass" name="cuentadeahorro">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="1" type="_hintegerType"/>
@@ -225,7 +243,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorroexposedfilter"        name="cuentadeahorro"        type="_cuentadeahorroSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorrodisplaymodal"         name="cuentadeahorro"        type="_cuentadeahorroSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorroentityname"           name="cuentadeahorro"        type="_cuentadeahorroSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorroscaffold"             name="cuentadeahorro"        type="_cuentadeahorroSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassExposedFilter" name="exposedfiltercuentadeahorro" >
@@ -265,6 +283,10 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="cuentadeahorro" default="Cuenta de ahorro" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassScaffold" name="scaffoldcuentadeahorro">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_aportacionSTKClass" name="aportacion">
 				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="1" type="_cuentadeahorroSTKClassModal"/>
@@ -275,7 +297,7 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_paportacionexposedfilter"        name="aportacion"        type="_aportacionSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_paportaciondisplaymodal"         name="aportacion"        type="_aportacionSTKClassDisplayModal"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_paportacionentityname"           name="aportacion"        type="_aportacionSTKClassEntityName"/>
-				
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_paportacionscaffold"             name="aportacion"        type="_aportacionSTKClassScaffold"/>
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_aportacionSTKClassExposedFilter" name="exposedfilteraportacion" >
@@ -309,6 +331,10 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="aportacion" default="Aportacion" lower="1"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_aportacionSTKClassScaffold" name="scaffoldaportacion">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_empresaSTKClassModal" name="modalempresa">
 			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pempresa" name="empresa" type="_empresaSTKClass"/>
@@ -563,7 +589,7 @@
 					<profileSTK:DisplayModal  xmi:id="_empresaSTKDM" base_Class="_empresaSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_empresaSTKEN" base_Class="_empresaSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_empresaSTKNR" base_Class="_empresaSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_empresaSTKS"  base_Class="_empresaSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_departamentoSTK" base_Class="_departamentoSTKClass"/>
 		      		<profileSTK:Modal xmi:id="_empresaSTK" base_Class="_empresaSTKClass"/>
 					<profileSTK:DisplayResult xmi:id="_departamentoSTKDR" base_Class="_departamentoSTKClassDisplayResult"/>
@@ -571,7 +597,7 @@
 					<profileSTK:DisplayModal  xmi:id="_departamentoSTKDM" base_Class="_departamentoSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_departamentoSTKEN" base_Class="_departamentoSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_departamentoSTKNR" base_Class="_departamentoSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_departamentoSTKS"  base_Class="_departamentoSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_plantaSTK" base_Class="_plantaSTKClass"/>
 		      		<profileSTK:Modal xmi:id="_empresaSTK" base_Class="_empresaSTKClass"/>
 					<profileSTK:DisplayResult xmi:id="_plantaSTKDR" base_Class="_plantaSTKClassDisplayResult"/>
@@ -579,7 +605,7 @@
 					<profileSTK:DisplayModal  xmi:id="_plantaSTKDM" base_Class="_plantaSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_plantaSTKEN" base_Class="_plantaSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_plantaSTKNR" base_Class="_plantaSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_plantaSTKS"  base_Class="_plantaSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_tasadeinteresSTK" base_Class="_tasadeinteresSTKClass"/>
 		      		<profileSTK:Modal xmi:id="_empresaSTK" base_Class="_empresaSTKClass"/>
 					<profileSTK:DisplayResult xmi:id="_tasadeinteresSTKDR" base_Class="_tasadeinteresSTKClassDisplayResult"/>
@@ -587,7 +613,7 @@
 					<profileSTK:DisplayModal  xmi:id="_tasadeinteresSTKDM" base_Class="_tasadeinteresSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_tasadeinteresSTKEN" base_Class="_tasadeinteresSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_tasadeinteresSTKNR" base_Class="_tasadeinteresSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_tasadeinteresSTKS"  base_Class="_tasadeinteresSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_cuentadeahorroSTK" base_Class="_cuentadeahorroSTKClass"/>
 		      		<profileSTK:EnumRadio xmi:id="_tipoahorroSTK" base_Class="_tipoahorroSTKClass"/>
 					<profileSTK:DisplayResult xmi:id="_cuentadeahorroSTKDR" base_Class="_cuentadeahorroSTKClassDisplayResult"/>
@@ -595,7 +621,7 @@
 					<profileSTK:DisplayModal  xmi:id="_cuentadeahorroSTKDM" base_Class="_cuentadeahorroSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_cuentadeahorroSTKEN" base_Class="_cuentadeahorroSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_cuentadeahorroSTKNR" base_Class="_cuentadeahorroSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_cuentadeahorroSTKS"  base_Class="_cuentadeahorroSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_aportacionSTK" base_Class="_aportacionSTKClass"/>
 		      		<profileSTK:Modal xmi:id="_cuentadeahorroSTK" base_Class="_cuentadeahorroSTKClass"/>
 		      		<profileSTK:EnumRadio xmi:id="_tipoaportacionSTK" base_Class="_tipoaportacionSTKClass"/>
@@ -604,5 +630,5 @@
 					<profileSTK:DisplayModal  xmi:id="_aportacionSTKDM" base_Class="_aportacionSTKClassDisplayModal"/>
 					<profileSTK:EntityName    xmi:id="_aportacionSTKEN" base_Class="_aportacionSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_aportacionSTKNR" base_Class="_aportacionSTKClassNotRequired"/>
-					
+					<profileSTK:Scaffold      xmi:id="_aportacionSTKS"  base_Class="_aportacionSTKClassScaffold"/>
 	</xmi:XMI>
