@@ -233,12 +233,227 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClass" name="socio">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Socio" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="4" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Genero" lower="5" type="_generoSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo" name="correo" default="Correo electronico" lower="6" type="_socioSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Numero telefonico" lower="7" type="_socioSTKClassNotRequired"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo empleado" lower="8" type="_tipoempleadoSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppertenece" name="pertenece" default="Departamento" lower="9" type="_departamentoSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_plabora" name="labora" default="Planta" lower="10" type="_plantaSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psociodisplayresult"        name="socio"        type="_socioSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psocioexposedfilter"        name="socio"        type="_socioSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psociodisplaymodal"         name="socio"        type="_socioSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psocioentityname"           name="socio"        type="_socioSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psocioscaffold"             name="socio"        type="_socioSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassExposedFilter" name="exposedfiltersocio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero" lower="11" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Socio" lower="12" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="13" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="14" type="_htextType"/>
+			<!--3-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Genero" lower="15" type="_generoSTKClass"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo empleado" lower="16" type="_tipoempleadoSTKClass"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppertenece" name="pertenece" default="Departamento" lower="17" type="_departamentoSTKClassModal"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassDisplayResult" name="displayresultsocio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero" lower="18" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Socio" lower="19" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="20" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="21" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Numero telefonico" lower="22" type="_socioSTKClassNotRequired"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppertenece" name="pertenece" default="Departamento" lower="23" type="_departamentoSTKClassModal"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_plabora" name="labora" default="Planta" lower="24" type="_plantaSTKClassModal"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassNotRequired" name="notrequiredsocio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo" name="correo" default="Correo electronico" lower="25" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Numero telefonico" lower="26" type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassDisplayModal" name="displaymodalsocio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero"    name="numero"  default="numero" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassEntityName" name="entitynamesocio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="socio" default="Socio" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassScaffold" name="scaffoldsocio">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClass" name="cuentabancaria">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="1" type="_socioSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuenta" name="cuenta" default="Numero de cuenta" lower="2" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pclabe" name="clabe" default="Cuenta clabe" lower="3" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pemitidapor" name="emitidapor" default="Banco Emisor" lower="4" type="_bancoSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancariadisplayresult"        name="cuentabancaria"        type="_cuentabancariaSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancariaexposedfilter"        name="cuentabancaria"        type="_cuentabancariaSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancariadisplaymodal"         name="cuentabancaria"        type="_cuentabancariaSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancariaentityname"           name="cuentabancaria"        type="_cuentabancariaSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancariascaffold"             name="cuentabancaria"        type="_cuentabancariaSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassExposedFilter" name="exposedfiltercuentabancaria" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="5" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuenta" name="cuenta" default="Numero de cuenta" lower="6" type="_hintegerType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pemitidapor" name="emitidapor" default="Banco Emisor" lower="7" type="_bancoSTKClass"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassDisplayResult" name="displayresultcuentabancaria" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="8" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuenta" name="cuenta" default="Numero de cuenta" lower="9" type="_hintegerType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclabe" name="clabe" default="Cuenta clabe" lower="10" type="_hintegerType"/>
+			<!--2-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pemitidapor" name="emitidapor" default="Banco Emisor" lower="11" type="_bancoSTKClass"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassNotRequired" name="notrequiredcuentabancaria" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassDisplayModal" name="displaymodalcuentabancaria" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuenta"    name="cuenta"  default="cuenta" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassEntityName" name="entitynamecuentabancaria" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="cuentabancaria" default="Cuenta Bancaria" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassScaffold" name="scaffoldcuentabancaria">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClass" name="domicilio">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="1" type="_socioSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcalle" name="calle" default="Calle" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Codigo Postal" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="4" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="5" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdomiciliodisplayresult"        name="domicilio"        type="_domicilioSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdomicilioexposedfilter"        name="domicilio"        type="_domicilioSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdomiciliodisplaymodal"         name="domicilio"        type="_domicilioSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdomicilioentityname"           name="domicilio"        type="_domicilioSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdomicilioscaffold"             name="domicilio"        type="_domicilioSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassExposedFilter" name="exposedfilterdomicilio" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="6" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Codigo Postal" lower="7" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="8" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="9" type="_htextType"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassDisplayResult" name="displayresultdomicilio" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="10" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcalle" name="calle" default="Calle" lower="11" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Codigo Postal" lower="12" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="13" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="14" type="_htextType"/>
+			<!--4-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassNotRequired" name="notrequireddomicilio" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassDisplayModal" name="displaymodaldomicilio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcP"    name="cP"  default="cP" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassEntityName" name="entitynamedomicilio" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="domicilio" default="Domicilio" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassScaffold" name="scaffolddomicilio">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClass" name="perfil">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="1" type="_socioSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuario" name="usuario" default="Usuario" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnip" name="nip" default="Contraseña" lower="3" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pperfildisplayresult"        name="perfil"        type="_perfilSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pperfilexposedfilter"        name="perfil"        type="_perfilSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pperfildisplaymodal"         name="perfil"        type="_perfilSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pperfilentityname"           name="perfil"        type="_perfilSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pperfilscaffold"             name="perfil"        type="_perfilSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassExposedFilter" name="exposedfilterperfil" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="4" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuario" name="usuario" default="Usuario" lower="5" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassDisplayResult" name="displayresultperfil" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="6" type="_socioSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuario" name="usuario" default="Usuario" lower="7" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnip" name="nip" default="Contraseña" lower="8" type="_htextType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassNotRequired" name="notrequiredperfil" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassDisplayModal" name="displaymodalperfil" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuario"    name="usuario"  default="usuario" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassEntityName" name="entitynameperfil" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="perfil" default="Perfil" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassScaffold" name="scaffoldperfil">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+			</packagedElement>
+			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClass" name="cuentadeahorro">
-					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="1" type="_hintegerType"/>
-				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="2" type="_tipoahorroSTKClass"/>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="3" type="_hdateType"/>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="4" type="_hdateType"/>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="5" type="_hdateType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="1" type="_socioSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="2" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="3" type="_tipoahorroSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="4" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="5" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="6" type="_hdateType"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorrodisplayresult"        name="cuentadeahorro"        type="_cuentadeahorroSTKClassDisplayResult"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorroexposedfilter"        name="cuentadeahorro"        type="_cuentadeahorroSTKClassExposedFilter"/>
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorrodisplaymodal"         name="cuentadeahorro"        type="_cuentadeahorroSTKClassDisplayModal"/>
@@ -247,29 +462,33 @@
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassExposedFilter" name="exposedfiltercuentadeahorro" >
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="6" type="_hintegerType"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="7" type="_socioSTKClassModal"/>
 			<!--0-->
-			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="7" type="_tipoahorroSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="8" type="_hintegerType"/>
 			<!--1-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="8" type="_hdateType"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="9" type="_tipoahorroSTKClass"/>
 			<!--2-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="9" type="_hdateType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="10" type="_hdateType"/>
 			<!--3-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="10" type="_hdateType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="11" type="_hdateType"/>
 			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="12" type="_hdateType"/>
+			<!--5-->
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassDisplayResult" name="displayresultcuentadeahorro" >
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="11" type="_hintegerType"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Numero de socio" lower="13" type="_socioSTKClassModal"/>
 			<!--0-->
-			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="12" type="_tipoahorroSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumero" name="numero" default="Numero de cuenta" lower="14" type="_hintegerType"/>
 			<!--1-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="13" type="_hdateType"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo" lower="15" type="_tipoahorroSTKClass"/>
 			<!--2-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="14" type="_hdateType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechacontratacion" name="fechacontratacion" default="Fecha de contratacion" lower="16" type="_hdateType"/>
 			<!--3-->
-				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="15" type="_hdateType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechavencimiento" name="fechavencimiento" default="Fecha de vencimiento" lower="17" type="_hdateType"/>
 			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechadisponibilidad" name="fechadisponibilidad" default="Fecha de disponibilidad" lower="18" type="_hdateType"/>
+			<!--5-->
 			</packagedElement>
 			
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassNotRequired" name="notrequiredcuentadeahorro" >
@@ -336,6 +555,110 @@
 				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
 			</packagedElement>
 			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClass" name="beneficiario">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="1" type="_cuentadeahorroSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="4" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechanacimiento" name="fechanacimiento" default="Fecha de nacimiento" lower="5" type="_hdateType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Genero" lower="6" type="_generoSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Parentesco" lower="7" type="_parentescoSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiariodisplayresult"        name="beneficiario"        type="_beneficiarioSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiarioexposedfilter"        name="beneficiario"        type="_beneficiarioSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiariodisplaymodal"         name="beneficiario"        type="_beneficiarioSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiarioentityname"           name="beneficiario"        type="_beneficiarioSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiarioscaffold"             name="beneficiario"        type="_beneficiarioSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassExposedFilter" name="exposedfilterbeneficiario" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="8" type="_cuentadeahorroSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="9" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="10" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="11" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechanacimiento" name="fechanacimiento" default="Fecha de nacimiento" lower="12" type="_hdateType"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Genero" lower="13" type="_generoSTKClass"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Parentesco" lower="14" type="_parentescoSTKClass"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassDisplayResult" name="displayresultbeneficiario" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="15" type="_cuentadeahorroSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="16" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="17" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="18" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechanacimiento" name="fechanacimiento" default="Fecha de nacimiento" lower="19" type="_hdateType"/>
+			<!--4-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassNotRequired" name="notrequiredbeneficiario" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassDisplayModal" name="displaymodalbeneficiario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassEntityName" name="entitynamebeneficiario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="beneficiario" default="Beneficiario" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassScaffold" name="scaffoldbeneficiario">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClass" name="interes">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="1" type="_cuentadeahorroSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha" lower="2" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pmonto" name="monto" default="Monto" lower="3" type="_hdoubleType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pinteresdisplayresult"        name="interes"        type="_interesSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pinteresexposedfilter"        name="interes"        type="_interesSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pinteresdisplaymodal"         name="interes"        type="_interesSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pinteresentityname"           name="interes"        type="_interesSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pinteresscaffold"             name="interes"        type="_interesSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassExposedFilter" name="exposedfilterinteres" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="4" type="_cuentadeahorroSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha" lower="5" type="_hdateType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassDisplayResult" name="displayresultinteres" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Cuenta de ahorro" lower="6" type="_cuentadeahorroSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha" lower="7" type="_hdateType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pmonto" name="monto" default="Monto" lower="8" type="_hdoubleType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassNotRequired" name="notrequiredinteres" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassDisplayModal" name="displaymodalinteres" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha"    name="fecha"  default="fecha" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassEntityName" name="entitynameinteres" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="interes" default="Intereses" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassScaffold" name="scaffoldinteres">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="1"  type="_htextType"/>
+			</packagedElement>
+			
 			<packagedElement xmi:type="uml:Class" xmi:id="_empresaSTKClassModal" name="modalempresa">
 			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pempresa" name="empresa" type="_empresaSTKClass"/>
 			      	</packagedElement>
@@ -348,11 +671,29 @@
 			<packagedElement xmi:type="uml:Class" xmi:id="_tasadeinteresSTKClassModal" name="modaltasadeinteres">
 			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_ptasadeinteres" name="tasadeinteres" type="_tasadeinteresSTKClass"/>
 			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_socioSTKClassModal" name="modalsocio">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_psocio" name="socio" type="_socioSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_cuentabancariaSTKClassModal" name="modalcuentabancaria">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentabancaria" name="cuentabancaria" type="_cuentabancariaSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_domicilioSTKClassModal" name="modaldomicilio">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pdomicilio" name="domicilio" type="_domicilioSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_perfilSTKClassModal" name="modalperfil">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pperfil" name="perfil" type="_perfilSTKClass"/>
+			      	</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_cuentadeahorroSTKClassModal" name="modalcuentadeahorro">
 			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pcuentadeahorro" name="cuentadeahorro" type="_cuentadeahorroSTKClass"/>
 			      	</packagedElement>
 			<packagedElement xmi:type="uml:Class" xmi:id="_aportacionSTKClassModal" name="modalaportacion">
 			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_paportacion" name="aportacion" type="_aportacionSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_beneficiarioSTKClassModal" name="modalbeneficiario">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pbeneficiario" name="beneficiario" type="_beneficiarioSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_interesSTKClassModal" name="modalinteres">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pinteres" name="interes" type="_interesSTKClass"/>
 			      	</packagedElement>
 			
 			<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
@@ -614,7 +955,44 @@
 					<profileSTK:EntityName    xmi:id="_tasadeinteresSTKEN" base_Class="_tasadeinteresSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_tasadeinteresSTKNR" base_Class="_tasadeinteresSTKClassNotRequired"/>
 					<profileSTK:Scaffold      xmi:id="_tasadeinteresSTKS"  base_Class="_tasadeinteresSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_socioSTK" base_Class="_socioSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_generoSTK" base_Class="_generoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_tipoempleadoSTK" base_Class="_tipoempleadoSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_departamentoSTK" base_Class="_departamentoSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_plantaSTK" base_Class="_plantaSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_socioSTKDR" base_Class="_socioSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_socioSTKEF" base_Class="_socioSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_socioSTKDM" base_Class="_socioSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_socioSTKEN" base_Class="_socioSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_socioSTKNR" base_Class="_socioSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_socioSTKS"  base_Class="_socioSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_cuentabancariaSTK" base_Class="_cuentabancariaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_socioSTK" base_Class="_socioSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_bancoSTK" base_Class="_bancoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_cuentabancariaSTKDR" base_Class="_cuentabancariaSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_cuentabancariaSTKEF" base_Class="_cuentabancariaSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_cuentabancariaSTKDM" base_Class="_cuentabancariaSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_cuentabancariaSTKEN" base_Class="_cuentabancariaSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_cuentabancariaSTKNR" base_Class="_cuentabancariaSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_cuentabancariaSTKS"  base_Class="_cuentabancariaSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_domicilioSTK" base_Class="_domicilioSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_socioSTK" base_Class="_socioSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_domicilioSTKDR" base_Class="_domicilioSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_domicilioSTKEF" base_Class="_domicilioSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_domicilioSTKDM" base_Class="_domicilioSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_domicilioSTKEN" base_Class="_domicilioSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_domicilioSTKNR" base_Class="_domicilioSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_domicilioSTKS"  base_Class="_domicilioSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_perfilSTK" base_Class="_perfilSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_socioSTK" base_Class="_socioSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_perfilSTKDR" base_Class="_perfilSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_perfilSTKEF" base_Class="_perfilSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_perfilSTKDM" base_Class="_perfilSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_perfilSTKEN" base_Class="_perfilSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_perfilSTKNR" base_Class="_perfilSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_perfilSTKS"  base_Class="_perfilSTKClassScaffold"/>
 		<profileSTK:Crud xmi:id="_cuentadeahorroSTK" base_Class="_cuentadeahorroSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_socioSTK" base_Class="_socioSTKClass"/>
 		      		<profileSTK:EnumRadio xmi:id="_tipoahorroSTK" base_Class="_tipoahorroSTKClass"/>
 					<profileSTK:DisplayResult xmi:id="_cuentadeahorroSTKDR" base_Class="_cuentadeahorroSTKClassDisplayResult"/>
 					<profileSTK:ExposedFilter xmi:id="_cuentadeahorroSTKEF" base_Class="_cuentadeahorroSTKClassExposedFilter"/>
@@ -631,4 +1009,22 @@
 					<profileSTK:EntityName    xmi:id="_aportacionSTKEN" base_Class="_aportacionSTKClassEntityName"/>
 					<profileSTK:NotRequired   xmi:id="_aportacionSTKNR" base_Class="_aportacionSTKClassNotRequired"/>
 					<profileSTK:Scaffold      xmi:id="_aportacionSTKS"  base_Class="_aportacionSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_beneficiarioSTK" base_Class="_beneficiarioSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_cuentadeahorroSTK" base_Class="_cuentadeahorroSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_generoSTK" base_Class="_generoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_parentescoSTK" base_Class="_parentescoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_beneficiarioSTKDR" base_Class="_beneficiarioSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_beneficiarioSTKEF" base_Class="_beneficiarioSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_beneficiarioSTKDM" base_Class="_beneficiarioSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_beneficiarioSTKEN" base_Class="_beneficiarioSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_beneficiarioSTKNR" base_Class="_beneficiarioSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_beneficiarioSTKS"  base_Class="_beneficiarioSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_interesSTK" base_Class="_interesSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_cuentadeahorroSTK" base_Class="_cuentadeahorroSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_interesSTKDR" base_Class="_interesSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_interesSTKEF" base_Class="_interesSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_interesSTKDM" base_Class="_interesSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_interesSTKEN" base_Class="_interesSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_interesSTKNR" base_Class="_interesSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_interesSTKS"  base_Class="_interesSTKClassScaffold"/>
 	</xmi:XMI>
