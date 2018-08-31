@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profileSTK="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28 ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg">
+		<uml:Model xmi:id="_GbyPcBgjEeiXUO3vwBykwQ" name="Angular">
+		<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo">
+		
+			<packagedElement xmi:type="uml:Class" xmi:id="_lineaSTKClass" name="radiolinea">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pa" name="a" default="1" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pb" name="b" default="2" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pc" name="c" default="3" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd" name="d" default="4" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe" name="e" default="5" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pf" name="f" default="6" lower="6" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pg" name="g" default="7" lower="7" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estadoordenSTKClass" name="radioestadoorden">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pxx" name="xx" default="Pendiente" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="En proceso" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="Pausada" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Finalizada" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="Cancelada" lower="5" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_destinoSTKClass" name="radiodestino">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pxx" name="xx" default="N/A" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd1" name="d1" default="USA" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd2" name="d2" default="Canada" lower="3" type="_hradioType"/>
+			 </packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClass" name="cliente">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del cliente" lower="2" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_psociedad" name="sociedad" default="Empresa" lower="3" type="_clienteSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="EtiquetaAsignada" lower="4" type="_etiquetaasignadaSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptiene" name="tiene" default="Orden simplificada" lower="5" type="_ordensimplificadaSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclientedisplayresult"        name="cliente"        type="_clienteSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclienteexposedfilter"        name="cliente"        type="_clienteSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclientedisplaymodal"         name="cliente"        type="_clienteSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclienteentityname"           name="cliente"        type="_clienteSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclientescaffold"             name="cliente"        type="_clienteSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassExposedFilter" name="exposedfiltercliente" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave" lower="6" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del cliente" lower="7" type="_htextType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_psociedad" name="sociedad" default="Empresa" lower="8" type="_clienteSTKClassModal"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassDisplayResult" name="displayresultcliente" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave" lower="9" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del cliente" lower="10" type="_htextType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_psociedad" name="sociedad" default="Empresa" lower="11" type="_clienteSTKClassModal"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassNotRequired" name="notrequiredcliente" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_psociedad" name="sociedad" default="Empresa" lower="12" type="_clienteSTKClassModal"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="EtiquetaAsignada" lower="13" type="_etiquetaasignadaSTKClassModal"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptiene" name="tiene" default="Orden simplificada" lower="14" type="_ordensimplificadaSTKClassModal"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassDisplayModal" name="displaymodalcliente" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassEntityName" name="entitynamecliente" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="cliente" default="Cliente Registrado" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassScaffold" name="scaffoldcliente">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClass" name="etiquetaasignada">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadasxpalet" name="etiquetaasignadasxpalet" default="Etiqueta x Palet" lower="2" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo1" name="multiplo1" default="Multiplo 1" lower="3" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo2" name="multiplo2" default="Multiplo 2" lower="4" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo3" name="multiplo3" default="Multiplo 3" lower="5" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pf5" name="f5" default="F5" lower="6" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Cliente" lower="7" type="_clienteSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppara" name="para" default="Orden" lower="8" type="_ordensimplificadaSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadadisplayresult"        name="etiquetaasignada"        type="_etiquetaasignadaSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadaexposedfilter"        name="etiquetaasignada"        type="_etiquetaasignadaSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadadisplaymodal"         name="etiquetaasignada"        type="_etiquetaasignadaSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadaentityname"           name="etiquetaasignada"        type="_etiquetaasignadaSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadascaffold"             name="etiquetaasignada"        type="_etiquetaasignadaSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassExposedFilter" name="exposedfilteretiquetaasignada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="9" type="_hintegerType"/>
+			<!--0-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Cliente" lower="10" type="_clienteSTKClassModal"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassDisplayResult" name="displayresultetiquetaasignada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="11" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignadasxpalet" name="etiquetaasignadasxpalet" default="Etiqueta x Palet" lower="12" type="_hintegerType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo1" name="multiplo1" default="Multiplo 1" lower="13" type="_hintegerType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo2" name="multiplo2" default="Multiplo 2" lower="14" type="_hintegerType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pmultiplo3" name="multiplo3" default="Multiplo 3" lower="15" type="_hintegerType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pf5" name="f5" default="F5" lower="16" type="_hintegerType"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Cliente" lower="17" type="_clienteSTKClassModal"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassNotRequired" name="notrequiredetiquetaasignada" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassDisplayModal" name="displaymodaletiquetaasignada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psAP"    name="sAP"  default="sAP" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassEntityName" name="entitynameetiquetaasignada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="etiquetaasignada" default="Etiqueta Asignada" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassScaffold" name="scaffoldetiquetaasignada">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClass" name="operadorproduccion">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumeroempleado" name="numeroempleado" default="Numero de empleado" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del operador" lower="2" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproducciondisplayresult"        name="operadorproduccion"        type="_operadorproduccionSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproduccionexposedfilter"        name="operadorproduccion"        type="_operadorproduccionSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproducciondisplaymodal"         name="operadorproduccion"        type="_operadorproduccionSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproduccionentityname"           name="operadorproduccion"        type="_operadorproduccionSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproduccionscaffold"             name="operadorproduccion"        type="_operadorproduccionSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassExposedFilter" name="exposedfilteroperadorproduccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumeroempleado" name="numeroempleado" default="Numero de empleado" lower="3" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del operador" lower="4" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassDisplayResult" name="displayresultoperadorproduccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumeroempleado" name="numeroempleado" default="Numero de empleado" lower="5" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del operador" lower="6" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassNotRequired" name="notrequiredoperadorproduccion" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassDisplayModal" name="displaymodaloperadorproduccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnumeroEmpleado"    name="numeroEmpleado"  default="numeroEmpleado" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassEntityName" name="entitynameoperadorproduccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="operadorproduccion" default="Orden de fabricacion" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassScaffold" name="scaffoldoperadorproduccion">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClass" name="ordensimplificada">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pordentrabajo" name="ordentrabajo" default="Orden de trabajo" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="2" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_plinea" name="linea" default="Linea" lower="3" type="_lineaSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcantidadprogramada" name="cantidadprogramada" default="Programado" lower="4" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcantidadproducida" name="cantidadproducida" default="Producido" lower="5" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechainicial" name="fechainicial" default="Fecha/Hora Inicial" lower="6" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechafinal" name="fechafinal" default="Fecha/Hora Final" lower="7" type="_hdateType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pdestinomercancia" name="destinomercancia" default="Destino mercanc�a" lower="8" type="_destinoSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado de la Orden" lower="9" type="_estadoordenSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado2" name="estado2" default="Estado de la Orden" lower="10" type="_estadoordenSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_psupervisor" name="supervisor" default="Supervisor" lower="11" type="_operadorproduccionSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_poperador" name="operador" default="Operador" lower="12" type="_operadorproduccionSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomentario" name="comentario" default="Comentario" lower="13" type="_ordensimplificadaSTKClassNotRequired"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Cliente" lower="14" type="_clienteSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificadadisplayresult"        name="ordensimplificada"        type="_ordensimplificadaSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificadaexposedfilter"        name="ordensimplificada"        type="_ordensimplificadaSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificadadisplaymodal"         name="ordensimplificada"        type="_ordensimplificadaSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificadaentityname"           name="ordensimplificada"        type="_ordensimplificadaSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificadascaffold"             name="ordensimplificada"        type="_ordensimplificadaSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassExposedFilter" name="exposedfilterordensimplificada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordentrabajo" name="ordentrabajo" default="Orden de trabajo" lower="15" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="16" type="_hintegerType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_plinea" name="linea" default="Linea" lower="17" type="_lineaSTKClass"/>
+			<!--2-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pdestinomercancia" name="destinomercancia" default="Destino mercanc�a" lower="18" type="_destinoSTKClass"/>
+			<!--3-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado de la Orden" lower="19" type="_estadoordenSTKClass"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado2" name="estado2" default="Estado de la Orden" lower="20" type="_estadoordenSTKClass"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_psupervisor" name="supervisor" default="Supervisor" lower="21" type="_operadorproduccionSTKClassModal"/>
+			<!--6-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_poperador" name="operador" default="Operador" lower="22" type="_operadorproduccionSTKClassModal"/>
+			<!--7-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassDisplayResult" name="displayresultordensimplificada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordentrabajo" name="ordentrabajo" default="Orden de trabajo" lower="23" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psap" name="sap" default="SAP" lower="24" type="_hintegerType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_plinea" name="linea" default="Linea" lower="25" type="_lineaSTKClass"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcantidadprogramada" name="cantidadprogramada" default="Programado" lower="26" type="_hintegerType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcantidadproducida" name="cantidadproducida" default="Producido" lower="27" type="_hintegerType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechainicial" name="fechainicial" default="Fecha/Hora Inicial" lower="28" type="_hdateType"/>
+			<!--5-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechafinal" name="fechafinal" default="Fecha/Hora Final" lower="29" type="_hdateType"/>
+			<!--6-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_poperador" name="operador" default="Operador" lower="30" type="_operadorproduccionSTKClassModal"/>
+			<!--7-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassNotRequired" name="notrequiredordensimplificada" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_poperador" name="operador" default="Operador" lower="31" type="_operadorproduccionSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomentario" name="comentario" default="Comentario" lower="32" type="_htextType"/>
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pde" name="de" default="Cliente" lower="33" type="_clienteSTKClassModal"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassDisplayModal" name="displaymodalordensimplificada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pordenTrabajo"    name="ordenTrabajo"  default="ordenTrabajo" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassEntityName" name="entitynameordensimplificada" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="ordensimplificada" default="Orden de fabricacion" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassScaffold" name="scaffoldordensimplificada">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_clienteSTKClassModal" name="modalcliente">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pcliente" name="cliente" type="_clienteSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_etiquetaasignadaSTKClassModal" name="modaletiquetaasignada">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_petiquetaasignada" name="etiquetaasignada" type="_etiquetaasignadaSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_operadorproduccionSTKClassModal" name="modaloperadorproduccion">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_poperadorproduccion" name="operadorproduccion" type="_operadorproduccionSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_ordensimplificadaSTKClassModal" name="modalordensimplificada">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pordensimplificada" name="ordensimplificada" type="_ordensimplificadaSTKClass"/>
+			      	</packagedElement>
+			
+			<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
+	        	<eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VI_tYSPtEeihHKoXXUFGQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+	          	<references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg"/>
+	        	</eAnnotations>
+	        	<appliedProfile xmi:type="uml:Profile" href="ProfileSTK.profile.uml#_0"/>
+	      	</profileApplication>
+		</packagedElement>
+
+	 <packagedElement xmi:type="uml:Package" xmi:id="_RmsvEBgrEeiXUO3vwBykwQ" name="com.softtek.types">
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextType" name="HText">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFRgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFhgrEeiXUO3vwBykwQ" value="20"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hcheckboxType" name="HCheckbox">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvJxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvKBgrEeiXUO3vwBykwQ" value="check"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvKRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvKhgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvKxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvLBgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hintegerType" name="HInteger">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="number"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Integer"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	 
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdateType" name="HDate">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvOxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPBgrEeiXUO3vwBykwQ" value="date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPhgrEeiXUO3vwBykwQ" value="Date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvQBgrEeiXUO3vwBykwQ" value="DATE"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextlongType" name="HTextLong">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvSBgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvSRgrEeiXUO3vwBykwQ" value="longtext"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvShgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvSxgrEeiXUO3vwBykwQ" value="256"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvTBgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvTRgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvThgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvTxgrEeiXUO3vwBykwQ" value="VARCHAR(256)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hradioType" name="HRadio">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvUhgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvUxgrEeiXUO3vwBykwQ" value="radio"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvVBgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvVRgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvVhgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvVxgrEeiXUO3vwBykwQ" value="VARCHAR(10)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hbooleanType" name="HBoolean">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="TINYINT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdoubleType" name="HDouble">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="decimal"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hemailType" name="HEmail">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="email"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(128)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hcurrencyType" name="HCurrency">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="currency"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_himageType" name="HImage">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="image"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+   	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_hfileType" name="HFile">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="file"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+   	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_hemailType" name="HEmail">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="email"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(128)"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+	 
+	 </packagedElement>
+	 
+     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yXQQgBgqEeiXUO3vwBykwQ">
+       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQQgRgqEeiXUO3vwBykwQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+       </eAnnotations>
+       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+     </profileApplication>
+     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yA1A8CCjEei6mbiCVs6ctg">
+       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yA-x8CCjEei6mbiCVs6ctg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+         <references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_Zp_Y8CCjEei6mbiCVs6ctg"/>
+       </eAnnotations>
+       <appliedProfile xmi:type="uml:Profile" href="ProfileSTK.profile.uml#_ahah4IM9EeW4E5WIqIiz6Q"/>
+     </profileApplication>	
+
+</uml:Model>
+		<profileSTK:Crud xmi:id="_clienteSTK" base_Class="_clienteSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_clienteSTK" base_Class="_clienteSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_etiquetaasignadaSTK" base_Class="_etiquetaasignadaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_ordensimplificadaSTK" base_Class="_ordensimplificadaSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_clienteSTKDR" base_Class="_clienteSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_clienteSTKEF" base_Class="_clienteSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_clienteSTKDM" base_Class="_clienteSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_clienteSTKEN" base_Class="_clienteSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_clienteSTKNR" base_Class="_clienteSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_clienteSTKS"  base_Class="_clienteSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_etiquetaasignadaSTK" base_Class="_etiquetaasignadaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_clienteSTK" base_Class="_clienteSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_ordensimplificadaSTK" base_Class="_ordensimplificadaSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_etiquetaasignadaSTKDR" base_Class="_etiquetaasignadaSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_etiquetaasignadaSTKEF" base_Class="_etiquetaasignadaSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_etiquetaasignadaSTKDM" base_Class="_etiquetaasignadaSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_etiquetaasignadaSTKEN" base_Class="_etiquetaasignadaSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_etiquetaasignadaSTKNR" base_Class="_etiquetaasignadaSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_etiquetaasignadaSTKS"  base_Class="_etiquetaasignadaSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_operadorproduccionSTK" base_Class="_operadorproduccionSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_operadorproduccionSTKDR" base_Class="_operadorproduccionSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_operadorproduccionSTKEF" base_Class="_operadorproduccionSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_operadorproduccionSTKDM" base_Class="_operadorproduccionSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_operadorproduccionSTKEN" base_Class="_operadorproduccionSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_operadorproduccionSTKNR" base_Class="_operadorproduccionSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_operadorproduccionSTKS"  base_Class="_operadorproduccionSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_ordensimplificadaSTK" base_Class="_ordensimplificadaSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_lineaSTK" base_Class="_lineaSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_destinoSTK" base_Class="_destinoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estadoordenSTK" base_Class="_estadoordenSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estadoordenSTK" base_Class="_estadoordenSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_operadorproduccionSTK" base_Class="_operadorproduccionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_operadorproduccionSTK" base_Class="_operadorproduccionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_clienteSTK" base_Class="_clienteSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_ordensimplificadaSTKDR" base_Class="_ordensimplificadaSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_ordensimplificadaSTKEF" base_Class="_ordensimplificadaSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_ordensimplificadaSTKDM" base_Class="_ordensimplificadaSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_ordensimplificadaSTKEN" base_Class="_ordensimplificadaSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_ordensimplificadaSTKNR" base_Class="_ordensimplificadaSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_ordensimplificadaSTKS"  base_Class="_ordensimplificadaSTKClassScaffold"/>
+	</xmi:XMI>

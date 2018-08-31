@@ -1,0 +1,270 @@
+module Demo {
+//Alcance 1. Pruebas cardinalidad modelo de dominio. 
+
+	enum Linea {
+		A: "1"
+		B: "2"
+		C: "3"
+		D: "4"
+		E: "5"
+		F: "6"
+		G: "7"
+	}
+	
+	enum EstadoOrden { 
+		XX: "Pendiente"		//prueba para que validen defecto reportado  
+		E1: "En proceso"
+		E2: "Pausada"
+		E3: "Finalizada"
+		E4: "Cancelada"
+	}
+	
+	enum Destino { 
+		XX: "N/A"			//prueba para que validen defecto reportado
+		D1: "USA"
+		D2: "Canada"
+	}
+	
+	entity Cliente { 
+		scaffold (add: true, edit: true, delete: true, search: Complex )
+       	glossary ( name: "Cliente Registrado", description: "Catalogo de Clientes" )
+       	
+        field Clave: Integer {
+       		glossary (name: "Clave", description: "Clave del cliente")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+ 
+        field Nombre: Text {
+       		glossary (name: "Nombre del cliente", description: "Nombre o razón social del cliente")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Name::fullName")
+       	}
+       	
+             //Referencia recursiva (a si mismo) 
+     	reference Sociedad : Cliente [0..1] {
+     	    glossary (name: "Empresa", description: "Cliente que es empresa")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+     	}
+        
+        //Esta referencia no debería implementarse en prototipo, solo en modelo de dominio
+        reference Es : EtiquetaAsignada [0..*] opposite-of EtiquetaAsignada.De{
+       	     glossary (name: "EtiquetaAsignada", description: "EtiquetaAsignada asignada")
+        	 constraints (unique: false, required: false)
+        }
+       	     
+       	reference Tiene: OrdenSimplificada [0..*]  opposite-of OrdenSimplificada.De {
+       	     glossary (name: "Orden simplificada", description: "Orden simplificada")
+        	 constraints (unique: false, required: false)
+        }
+       	
+       	def toString {
+       		return Nombre
+       }
+       
+   }
+    entity EtiquetaAsignada { 
+		scaffold (add: true, edit: true, delete: true, search: Complex )
+       	glossary ( name: "Etiqueta Asignada", description: "Catalogo de Etiqueta Asignadas" )
+       	
+       	field SAP: Integer {
+       		glossary (name: "SAP", description: "Referencia SAP")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+  
+        field EtiquetaAsignadasxPalet: Integer {
+       		glossary (name: "Etiqueta x Palet", description: "Numero de Etiqueta por palet")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+       	
+       	field Multiplo1: Integer {
+       		glossary (name: "Multiplo 1", description: "Multiplo 1")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+
+       	field Multiplo2: Integer {
+       		glossary (name: "Multiplo 2", description: "Multiplo 2")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	} 	 
+       	     	      	
+       	field Multiplo3: Integer {
+       		glossary (name: "Multiplo 3", description: "Multiplo 3")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	} 	
+       	
+       	field F5: Integer {
+       		glossary (name: "F5", description: "F5")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	} 	
+       	
+       	reference De : Cliente [1..1] opposite-of Cliente.Es {
+        	glossary (name: "Cliente", description: "Cliente al que pertenece la Etiqueta")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true, type: SelectList)
+        }
+        
+        reference Para : OrdenSimplificada [1..1] { //} opposite-of OrdenSimplificada.EtiquetaAsignada {
+       	     glossary (name: "Orden", description: "Orden simplificada")
+        	 constraints (unique: true, required: true)
+        }
+ 
+       def toString {
+       		return SAP
+       }
+	}  	
+	
+	entity OperadorProduccion { 
+		scaffold (add: true, edit: true, delete: true, search: Complex )
+       	glossary ( name: "Orden de fabricacion", description: "Oden de fabricacion" )
+       	
+        field NumeroEmpleado: Integer {
+       		glossary (name: "Numero de empleado", description: "Numero de empleado del operador")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Lorem::code5")
+       	}
+        
+        field Nombre: Text {
+       		glossary (name: "Nombre del operador", description: "Nombre del operador")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "Name::fullName")
+       	}
+        
+       //Esta referencia no debería implementarse en la pantalla de la entidad como campo-relación
+       //reference Sup : OrdenSimplificada [0..*] opposite-of OrdenSimplificada.Supervisor {
+       //		glossary (name: "Supervisor", description: "Supervisor asignado")
+       //	}
+
+       //Esta referencia no debería implementarse en la pantalla de la entidad como campo-relación
+       //reference Ope : OrdenSimplificada [0..*] opposite-of OrdenSimplificada.Operador{
+       //		glossary (name: "Operador", description: "Operador asignado")
+       //	}
+       	
+         def toString {
+       		return NumeroEmpleado
+       }
+	}  	
+ 
+	entity OrdenSimplificada { 
+		scaffold (add: true, edit: true, delete: true, search: Complex )
+       	glossary ( name: "Orden de fabricacion", description: "Orden de fabricacion simplificada para demo" )
+       	
+        field OrdenTrabajo: Integer {
+       		glossary (name: "Orden de trabajo", description: "Numero de orden de trabajo relacionada")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}      
+       	
+       	//Regla de negocio: por la clave SAP se conoce que etiqueta le corresponde
+       	field SAP: Integer {
+       		glossary (name: "SAP", description: "Referencia SAP")
+      		constraints (unique: true, required: true)
+       		widget ( exposed_filter: true, display_result: true)
+       		data (domain: "App::name")
+       	}
+       	
+       	/* 
+        //Esta referencia no debería implementarse en la pantalla de la entidad como campo-relación??
+        reference EtiquetaAsignada : EtiquetaAsignada [0..1] opposite-of EtiquetaAsignada.Para {
+        	glossary (name: "EtiquetaAsignada", description: "EtiquetaAsignada asignada a la orden")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: true, display_result: true)
+        }
+       	  */     	
+   		reference Linea : Linea [1..1] {
+       		glossary (name: "Linea", description: "Linea")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: true)  			
+  		}
+
+   
+        field CantidadProgramada: Integer {
+       		glossary (name: "Programado", description: "Cantidad que se solicita producir")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	} 
+       	
+       	
+       	field CantidadProducida: Integer {
+       		glossary (name: "Producido", description: "Cantidad que se produjo")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	} 
+      
+      
+        field FechaInicial: Date {
+       		glossary (name: "Fecha/Hora Inicial", description: "Fecha y Hora de inicio de fabricación")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}
+
+        field FechaFinal: Date {
+       		glossary (name: "Fecha/Hora Final", description: "Fecha y Hora de fin de fabricacion")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: false, display_result: true)
+       	}   	
+		reference DestinoMercancia : Destino [1..1] {
+       		glossary (name: "Destino mercancía", description: "Destino de la mercancia de la orden")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: false)  			
+  		}
+  		
+    	reference Estado : EstadoOrden [1..1] {
+       		glossary (name: "Estado de la Orden", description: "Estatus de la orden")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: false)  			
+  		}
+  		
+  		//Segunda referencia al mismo ENUM para que validen comportamiento
+  		reference Estado2 : EstadoOrden [1..1] {
+       		glossary (name: "Estado de la Orden", description: "Estatus de la orden")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: false)  			
+  		}
+  
+  		//Relación 1 con OperadorProducción
+    	reference Supervisor : OperadorProduccion [1..1] {// opposite-of OperadorProduccion.Sup {
+       		glossary (name: "Supervisor", description: "Supervisor de la orden")
+      		constraints (unique: false, required: true)
+       		widget ( exposed_filter: true, display_result: false)  			
+  		}
+  		
+		// Relación 2 con OperadorProducción
+    	reference Operador : OperadorProduccion [0..1] {//opposite-of OperadorProduccion.Ope {
+       		glossary (name: "Operador", description: "Operador de la orden")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: true, display_result: true)  			
+  		}
+       	
+       	
+        field Comentario: Text {
+       		glossary (name: "Comentario", description: "Comentario para el operador")
+      		constraints (unique: false, required: false)
+       		widget ( exposed_filter: false, display_result: false)
+       		data (domain: "Lorem::paragraph")
+       	}
+       	
+       	reference De : Cliente [1..1] opposite-of Cliente.Tiene {
+       		glossary (name: "Cliente", description: "Cliente")
+      		constraints (unique: false, required: false)
+       	}
+    	       	
+       	def toString {
+       		return OrdenTrabajo
+       }
+	}  		
+	
+}
