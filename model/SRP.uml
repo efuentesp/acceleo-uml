@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profileSTK="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profileSTK/_2k80cCbaEeiTkOMT9MrOGg/28 ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg">
+		<uml:Model xmi:id="_GbyPcBgjEeiXUO3vwBykwQ" name="Angular">
+		<packagedElement xmi:type="uml:Package" xmi:id="_E3QsMBgkEeiXUO3vwBykwQ" name="com.softtek.acceleo.demo">
+		
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestosSTKClass" name="radiopuestos">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pa" name="a" default="Promotor de cambaceo" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pb" name="b" default="Valuador" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pc" name="c" default="Mecanógrafo" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd" name="d" default="Expendedor" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe" name="e" default="Almacenista" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pf" name="f" default="Mozo" lower="6" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pg" name="g" default="Cajero" lower="7" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_tiponominaSTKClass" name="radiotiponomina">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pa" name="a" default="Externo" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pb" name="b" default="Interno" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pc" name="c" default="Sindicalizado" lower="3" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_tipoeventoSTKClass" name="radiotipoevento">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pa" name="a" default="Llamada telefónica" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pb" name="b" default="Contacto por eMail" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pc" name="c" default="Entrevista" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd" name="d" default="Examen" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe" name="e" default="AutorizaciónNivel 1" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pf" name="f" default="AutorizaciónNivel 2" lower="6" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pg" name="g" default="AutorizaciónNivel 3" lower="7" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ph" name="h" default="AutorizaciónNivel 4" lower="8" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pi" name="i" default="AutorizaciónNivel 5" lower="9" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_tipotrayectoriaSTKClass" name="radiotipotrayectoria">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pa" name="a" default="Estudios" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pb" name="b" default="Certificación" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pc" name="c" default="Experiencia Laboral" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pd" name="d" default="Interés" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe" name="e" default="Habilidad" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pf" name="f" default="Recomendación" lower="6" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pg" name="g" default="Curso" lower="7" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estatussolicitudSTKClass" name="radioestatussolicitud">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="Registrada" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="Completada" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Cancelada x candidato" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="Cancelada x reclutador" lower="4" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estatusofertaSTKClass" name="radioestatusoferta">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="Comunicada" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="Aceptada" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Declinada por candidato" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="Declinada por reclutador" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe5" name="e5" default="Cancelada por reclutador" lower="5" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estatusposicionSTKClass" name="radioestatusposicion">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="Abierta" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="Cerrada" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Cancelada" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="En pausa" lower="4" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estatuscandidatoSTKClass" name="radioestatuscandidato">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="Contactado" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="En proceso de evaluación" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Ofertado" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="En proceso de contratación" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe5" name="e5" default="Contratado" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe6" name="e6" default="Rechazado" lower="6" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe7" name="e7" default="Declinó" lower="7" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_estatuseventoSTKClass" name="radioestatusevento">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe1" name="e1" default="Agendado" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe2" name="e2" default="Realizado" lower="2" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe3" name="e3" default="Pedido por candidato" lower="3" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe4" name="e4" default="Perdido por NMP" lower="4" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe5" name="e5" default="Cancelado por candidato" lower="5" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pe6" name="e6" default="Cancelado por NMP" lower="6" type="_hradioType"/>
+			 </packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_generoSTKClass" name="radiogenero">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pmas" name="mas" default="Masculino" lower="1" type="_hradioType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfem" name="fem" default="Femenino" lower="2" type="_hradioType"/>
+			 </packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClass" name="candidato">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Candidato" lower="1" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de nacimiento" lower="4" type="_hdateType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Género" lower="5" type="_generoSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="6" type="_estatuscandidatoSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitud" name="solicitud" default="Solicitudes" lower="7" type="_solicitudSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pevento" name="evento" default="Eventos" lower="8" type="_eventoSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidatodisplayresult"        name="candidato"        type="_candidatoSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidatoexposedfilter"        name="candidato"        type="_candidatoSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidatodisplaymodal"         name="candidato"        type="_candidatoSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidatoentityname"           name="candidato"        type="_candidatoSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidatoscaffold"             name="candidato"        type="_candidatoSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassExposedFilter" name="exposedfiltercandidato" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Candidato" lower="9" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="10" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="11" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de nacimiento" lower="12" type="_hdateType"/>
+			<!--3-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Género" lower="13" type="_generoSTKClass"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="14" type="_estatuscandidatoSTKClass"/>
+			<!--5-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassDisplayResult" name="displayresultcandidato" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Candidato" lower="15" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="16" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="17" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de nacimiento" lower="18" type="_hdateType"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassNotRequired" name="notrequiredcandidato" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassDisplayModal" name="displaymodalcandidato" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassEntityName" name="entitynamecandidato" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="candidato" default="Candidato" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassScaffold" name="scaffoldcandidato">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClass" name="direccion">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="1" type="_candidatoSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcalle" name="calle" default="Calle" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Código Postal" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="4" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="5" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdirecciondisplayresult"        name="direccion"        type="_direccionSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdireccionexposedfilter"        name="direccion"        type="_direccionSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdirecciondisplaymodal"         name="direccion"        type="_direccionSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdireccionentityname"           name="direccion"        type="_direccionSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdireccionscaffold"             name="direccion"        type="_direccionSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassExposedFilter" name="exposedfilterdireccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Código Postal" lower="6" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="7" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="8" type="_htextType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassDisplayResult" name="displayresultdireccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcalle" name="calle" default="Calle" lower="9" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcp" name="cp" default="Código Postal" lower="10" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="11" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="12" type="_htextType"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassNotRequired" name="notrequireddireccion" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassDisplayModal" name="displaymodaldireccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcP"    name="cP"  default="cP" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassEntityName" name="entitynamedireccion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="direccion" default="Domicilio" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassScaffold" name="scaffolddireccion">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClass" name="documento">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del documento" lower="1" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción del documento" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psize" name="size" default="Tamaño" lower="3" type="_documentoSTKClassNotRequired"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumentodisplayresult"        name="documento"        type="_documentoSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumentoexposedfilter"        name="documento"        type="_documentoSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumentodisplaymodal"         name="documento"        type="_documentoSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumentoentityname"           name="documento"        type="_documentoSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumentoscaffold"             name="documento"        type="_documentoSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassExposedFilter" name="exposedfilterdocumento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del documento" lower="4" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción del documento" lower="5" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassDisplayResult" name="displayresultdocumento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del documento" lower="6" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción del documento" lower="7" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psize" name="size" default="Tamaño" lower="8" type="_documentoSTKClassNotRequired"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassNotRequired" name="notrequireddocumento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psize" name="size" default="Tamaño" lower="9" type="_hintegerType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassDisplayModal" name="displaymodaldocumento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassEntityName" name="entitynamedocumento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="documento" default="Documento Probatorio" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassScaffold" name="scaffolddocumento">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClass" name="solicitud">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="1" type="_posicionSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="2" type="_candidatoSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="3" type="_solicitudSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psalario" name="salario" default="Expectativa económica" lower="4" type="_hcurrencyType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo" name="correo" default="Correo electrónico" lower="5" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Teléfono" lower="6" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="7" type="_estatussolicitudSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psolicituddisplayresult"        name="solicitud"        type="_solicitudSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitudexposedfilter"        name="solicitud"        type="_solicitudSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psolicituddisplaymodal"         name="solicitud"        type="_solicitudSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitudentityname"           name="solicitud"        type="_solicitudSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitudscaffold"             name="solicitud"        type="_solicitudSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassExposedFilter" name="exposedfiltersolicitud" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="8" type="_posicionSTKClassModal"/>
+			<!--0-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="9" type="_candidatoSTKClassModal"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="10" type="_solicitudSTKClassNotRequired"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psalario" name="salario" default="Expectativa económica" lower="11" type="_hcurrencyType"/>
+			<!--3-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="12" type="_estatussolicitudSTKClass"/>
+			<!--4-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassDisplayResult" name="displayresultsolicitud" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="13" type="_posicionSTKClassModal"/>
+			<!--0-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="14" type="_candidatoSTKClassModal"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="15" type="_solicitudSTKClassNotRequired"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psalario" name="salario" default="Expectativa económica" lower="16" type="_hcurrencyType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo" name="correo" default="Correo electrónico" lower="17" type="_htextType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Teléfono" lower="18" type="_htextType"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="19" type="_estatussolicitudSTKClass"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassNotRequired" name="notrequiredsolicitud" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="20" type="_candidatoSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="21" type="_hdateType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassDisplayModal" name="displaymodalsolicitud" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcorreo"    name="correo"  default="correo" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassEntityName" name="entitynamesolicitud" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="solicitud" default="Solicitud de empleo" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassScaffold" name="scaffoldsolicitud">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClass" name="evento">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de Evento" lower="1" type="_tipoeventoSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del evento" lower="2" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="3" type="_posicionSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="4" type="_candidatoSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha programada" lower="5" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_presponsable" name="responsable" default="Responsable del evento" lower="6" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnotas" name="notas" default="Comentarios" lower="7" type="_eventoSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechareal" name="fechareal" default="Fecha real" lower="8" type="_eventoSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_presponsablereal" name="responsablereal" default="Responsable real" lower="9" type="_eventoSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfeedback" name="feedback" default="Feedback" lower="10" type="_eventoSTKClassNotRequired"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomentarios" name="comentarios" default="Comentarios del responsable" lower="11" type="_eventoSTKClassNotRequired"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="12" type="_estatuseventoSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_peventodisplayresult"        name="evento"        type="_eventoSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_peventoexposedfilter"        name="evento"        type="_eventoSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_peventodisplaymodal"         name="evento"        type="_eventoSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_peventoentityname"           name="evento"        type="_eventoSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_peventoscaffold"             name="evento"        type="_eventoSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassExposedFilter" name="exposedfilterevento" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de Evento" lower="13" type="_tipoeventoSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del evento" lower="14" type="_htextType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="15" type="_posicionSTKClassModal"/>
+			<!--2-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="16" type="_candidatoSTKClassModal"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha programada" lower="17" type="_hdateType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_presponsable" name="responsable" default="Responsable del evento" lower="18" type="_htextType"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="19" type="_estatuseventoSTKClass"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassDisplayResult" name="displayresultevento" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de Evento" lower="20" type="_tipoeventoSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre del evento" lower="21" type="_htextType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" default="Posición" lower="22" type="_posicionSTKClassModal"/>
+			<!--2-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="23" type="_candidatoSTKClassModal"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha programada" lower="24" type="_hdateType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_presponsable" name="responsable" default="Responsable del evento" lower="25" type="_htextType"/>
+			<!--5-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="26" type="_estatuseventoSTKClass"/>
+			<!--6-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassNotRequired" name="notrequiredevento" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="27" type="_candidatoSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnotas" name="notas" default="Comentarios" lower="28" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfechareal" name="fechareal" default="Fecha real" lower="29" type="_hdateType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_presponsablereal" name="responsablereal" default="Responsable real" lower="30" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfeedback" name="feedback" default="Feedback" lower="31" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcomentarios" name="comentarios" default="Comentarios del responsable" lower="32" type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassDisplayModal" name="displaymodalevento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassEntityName" name="entitynameevento" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="evento" default="Evento" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassScaffold" name="scaffoldevento">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClass" name="filial">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="1" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pubicacion" name="ubicacion" default="Ubicación de la filial" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="4" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Teléfono" lower="5" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psitio" name="sitio" default="Sitio Web" lower="6" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcontacto" name="contacto" default="Contacto" lower="7" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnotas" name="notas" default="Notas" lower="8" type="_filialSTKClassNotRequired"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfilialdisplayresult"        name="filial"        type="_filialSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfilialexposedfilter"        name="filial"        type="_filialSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfilialdisplaymodal"         name="filial"        type="_filialSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfilialentityname"           name="filial"        type="_filialSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfilialscaffold"             name="filial"        type="_filialSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassExposedFilter" name="exposedfilterfilial" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="9" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="10" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="11" type="_htextType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassDisplayResult" name="displayresultfilial" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="12" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pciudad" name="ciudad" default="Ciudad" lower="13" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estado" lower="14" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptelefono" name="telefono" default="Teléfono" lower="15" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psitio" name="sitio" default="Sitio Web" lower="16" type="_htextType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcontacto" name="contacto" default="Contacto" lower="17" type="_htextType"/>
+			<!--5-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassNotRequired" name="notrequiredfilial" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnotas" name="notas" default="Notas" lower="18" type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassDisplayModal" name="displaymodalfilial" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassEntityName" name="entitynamefilial" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="filial" default="Filial" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassScaffold" name="scaffoldfilial">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClass" name="posicion">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pfilial" name="filial" default="Filial" lower="1" type="_filialSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppuesto" name="puesto" default="Puesto" lower="2" type="_puestoSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre de la posición" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción de la vacante" lower="4" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="5" type="_hdateType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pcontacto" name="contacto" default="Responsable de la posición" lower="6" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_psalario" name="salario" default="Presupuesto para la posición" lower="7" type="_hcurrencyType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pvacantes" name="vacantes" default="Número de vacantes" lower="8" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de posición" lower="9" type="_tiponominaSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_preclutador" name="reclutador" default="Reclutador" lower="10" type="_reclutadorSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="11" type="_estatusposicionSTKClass"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitud" name="solicitud" default="Solicitud" lower="12" type="_solicitudSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pevento" name="evento" default="Evento" lower="13" type="_eventoSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pposiciondisplayresult"        name="posicion"        type="_posicionSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pposicionexposedfilter"        name="posicion"        type="_posicionSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pposiciondisplaymodal"         name="posicion"        type="_posicionSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pposicionentityname"           name="posicion"        type="_posicionSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pposicionscaffold"             name="posicion"        type="_posicionSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassExposedFilter" name="exposedfilterposicion" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pfilial" name="filial" default="Filial" lower="14" type="_filialSTKClassModal"/>
+			<!--0-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppuesto" name="puesto" default="Puesto" lower="15" type="_puestoSTKClassModal"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre de la posición" lower="16" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcontacto" name="contacto" default="Responsable de la posición" lower="17" type="_htextType"/>
+			<!--3-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de posición" lower="18" type="_tiponominaSTKClass"/>
+			<!--4-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="19" type="_estatusposicionSTKClass"/>
+			<!--5-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassDisplayResult" name="displayresultposicion" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pfilial" name="filial" default="Filial" lower="20" type="_filialSTKClassModal"/>
+			<!--0-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ppuesto" name="puesto" default="Puesto" lower="21" type="_puestoSTKClassModal"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre de la posición" lower="22" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción de la vacante" lower="23" type="_htextType"/>
+			<!--3-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfecha" name="fecha" default="Fecha de alta" lower="24" type="_hdateType"/>
+			<!--4-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pcontacto" name="contacto" default="Responsable de la posición" lower="25" type="_htextType"/>
+			<!--5-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_psalario" name="salario" default="Presupuesto para la posición" lower="26" type="_hcurrencyType"/>
+			<!--6-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pvacantes" name="vacantes" default="Número de vacantes" lower="27" type="_hintegerType"/>
+			<!--7-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptipo" name="tipo" default="Tipo de posición" lower="28" type="_tiponominaSTKClass"/>
+			<!--8-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_preclutador" name="reclutador" default="Reclutador" lower="29" type="_reclutadorSTKClassModal"/>
+			<!--9-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pestado" name="estado" default="Estatus" lower="30" type="_estatusposicionSTKClass"/>
+			<!--10-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassNotRequired" name="notrequiredposicion" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassDisplayModal" name="displaymodalposicion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassEntityName" name="entitynameposicion" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="posicion" default="Posición" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassScaffold" name="scaffoldposicion">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClass" name="puesto">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="1" type="_puestosSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción" lower="2" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppuestodisplayresult"        name="puesto"        type="_puestoSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppuestoexposedfilter"        name="puesto"        type="_puestoSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppuestodisplaymodal"         name="puesto"        type="_puestoSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppuestoentityname"           name="puesto"        type="_puestoSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppuestoscaffold"             name="puesto"        type="_puestoSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassExposedFilter" name="exposedfilterpuesto" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="3" type="_puestosSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción" lower="4" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassDisplayResult" name="displayresultpuesto" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="5" type="_puestosSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción" lower="6" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassNotRequired" name="notrequiredpuesto" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassDisplayModal" name="displaymodalpuesto" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassEntityName" name="entitynamepuesto" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="puesto" default="Puesto" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassScaffold" name="scaffoldpuesto">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClass" name="reclutador">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Reclutador" lower="1" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="3" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Género" lower="4" type="_generoSTKClass"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_preclutadordisplayresult"        name="reclutador"        type="_reclutadorSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_preclutadorexposedfilter"        name="reclutador"        type="_reclutadorSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_preclutadordisplaymodal"         name="reclutador"        type="_reclutadorSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_preclutadorentityname"           name="reclutador"        type="_reclutadorSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_preclutadorscaffold"             name="reclutador"        type="_reclutadorSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassExposedFilter" name="exposedfilterreclutador" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Reclutador" lower="5" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="6" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="7" type="_htextType"/>
+			<!--2-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pes" name="es" default="Género" lower="8" type="_generoSTKClass"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassDisplayResult" name="displayresultreclutador" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Reclutador" lower="9" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidopaterno" name="apellidopaterno" default="Apellido Paterno" lower="10" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_papellidomaterno" name="apellidomaterno" default="Apellido Materno" lower="11" type="_htextType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassNotRequired" name="notrequiredreclutador" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassDisplayModal" name="displaymodalreclutador" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassEntityName" name="entitynamereclutador" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="reclutador" default="Reclutador" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassScaffold" name="scaffoldreclutador">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClass" name="rol">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave del rol" lower="1" type="_hintegerType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="3" type="_hintegerType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_proldisplayresult"        name="rol"        type="_rolSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_prolexposedfilter"        name="rol"        type="_rolSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_proldisplaymodal"         name="rol"        type="_rolSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_prolentityname"           name="rol"        type="_rolSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_prolscaffold"             name="rol"        type="_rolSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassExposedFilter" name="exposedfilterrol" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave del rol" lower="4" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="5" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="6" type="_hintegerType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassDisplayResult" name="displayresultrol" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Clave del rol" lower="7" type="_hintegerType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre" name="nombre" default="Nombre" lower="8" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="9" type="_hintegerType"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassNotRequired" name="notrequiredrol" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassDisplayModal" name="displaymodalrol" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombre"    name="nombre"  default="nombre" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassEntityName" name="entitynamerol" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="rol" default="Rol" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassScaffold" name="scaffoldrol">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClass" name="trayectoria">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" default="Candidato" lower="1" type="_candidatoSTKClassModal"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoria" name="trayectoria" default="Tipo Trayectoria" lower="2" type="_tipotrayectoriaSTKClass"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pdescripcion" name="descripcion" default="Descripción de la trayectoria" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Palabra clave" lower="4" type="_htextType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumento" name="documento" default="Documento Probatorio" lower="5" type="_documentoSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoriadisplayresult"        name="trayectoria"        type="_trayectoriaSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoriaexposedfilter"        name="trayectoria"        type="_trayectoriaSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoriadisplaymodal"         name="trayectoria"        type="_trayectoriaSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoriaentityname"           name="trayectoria"        type="_trayectoriaSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoriascaffold"             name="trayectoria"        type="_trayectoriaSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassExposedFilter" name="exposedfiltertrayectoria" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoria" name="trayectoria" default="Tipo Trayectoria" lower="6" type="_tipotrayectoriaSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Palabra clave" lower="7" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassDisplayResult" name="displayresulttrayectoria" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoria" name="trayectoria" default="Tipo Trayectoria" lower="8" type="_tipotrayectoriaSTKClass"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave" name="clave" default="Palabra clave" lower="9" type="_htextType"/>
+			<!--1-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassNotRequired" name="notrequiredtrayectoria" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumento" name="documento" default="Documento Probatorio" lower="10" type="_documentoSTKClassModal"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassDisplayModal" name="displaymodaltrayectoria" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pclave"    name="clave"  default="clave" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassEntityName" name="entitynametrayectoria" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="trayectoria" default="Trayectoria" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassScaffold" name="scaffoldtrayectoria">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClass" name="usuario">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombreclave" name="nombreclave" default="Nombre Clave" lower="1" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_ppassword" name="password" default="Password" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="3" type="_hintegerType"/>
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="4" type="_rolSTKClassModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuariodisplayresult"        name="usuario"        type="_usuarioSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuarioexposedfilter"        name="usuario"        type="_usuarioSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuariodisplaymodal"         name="usuario"        type="_usuarioSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuarioentityname"           name="usuario"        type="_usuarioSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pusuarioscaffold"             name="usuario"        type="_usuarioSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassExposedFilter" name="exposedfilterusuario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombreclave" name="nombreclave" default="Nombre Clave" lower="5" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="6" type="_hintegerType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="7" type="_rolSTKClassModal"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassDisplayResult" name="displayresultusuario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombreclave" name="nombreclave" default="Nombre Clave" lower="8" type="_htextType"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pactivo" name="activo" default="Activo" lower="9" type="_hintegerType"/>
+			<!--1-->
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="10" type="_rolSTKClassModal"/>
+			<!--2-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassNotRequired" name="notrequiredusuario" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassDisplayModal" name="displaymodalusuario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnombreClave"    name="nombreClave"  default="nombreClave" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassEntityName" name="entitynameusuario" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="usuario" default="Usuario" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassScaffold" name="scaffoldusuario">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClass" name="permiso">
+				   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="1" type="_rolSTKClassModal"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pfuncion" name="funcion" default="Funcion" lower="2" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pruta" name="ruta" default="Ruta" lower="3" type="_htextType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="_pnivelpermiso" name="nivelpermiso" default="Permiso" lower="4" type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppermisodisplayresult"        name="permiso"        type="_permisoSTKClassDisplayResult"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppermisoexposedfilter"        name="permiso"        type="_permisoSTKClassExposedFilter"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppermisodisplaymodal"         name="permiso"        type="_permisoSTKClassDisplayModal"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppermisoentityname"           name="permiso"        type="_permisoSTKClassEntityName"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_ppermisoscaffold"             name="permiso"        type="_permisoSTKClassScaffold"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassExposedFilter" name="exposedfilterpermiso" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="5" type="_rolSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfuncion" name="funcion" default="Funcion" lower="6" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pruta" name="ruta" default="Ruta" lower="7" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnivelpermiso" name="nivelpermiso" default="Permiso" lower="8" type="_htextType"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassDisplayResult" name="displayresultpermiso" >
+			   <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" default="Rol" lower="9" type="_rolSTKClassModal"/>
+			<!--0-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfuncion" name="funcion" default="Funcion" lower="10" type="_htextType"/>
+			<!--1-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pruta" name="ruta" default="Ruta" lower="11" type="_htextType"/>
+			<!--2-->
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pnivelpermiso" name="nivelpermiso" default="Permiso" lower="12" type="_htextType"/>
+			<!--3-->
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassNotRequired" name="notrequiredpermiso" >
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassDisplayModal" name="displaymodalpermiso" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pfuncion"    name="funcion"  default="funcion" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassEntityName" name="entitynamepermiso" >
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pname" name="permiso" default="Permiso" lower="1"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassScaffold" name="scaffoldpermiso">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_padd"        name="add"       default="Add"    lower="1"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pedit"       name="edit"      default="Edit"   lower="2"  type="_htextType"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="_pdelete"     name="delete"    default="Delete" lower="3"  type="_htextType"/>
+			</packagedElement>
+			
+			<packagedElement xmi:type="uml:Class" xmi:id="_candidatoSTKClassModal" name="modalcandidato">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pcandidato" name="candidato" type="_candidatoSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_direccionSTKClassModal" name="modaldireccion">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pdireccion" name="direccion" type="_direccionSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_documentoSTKClassModal" name="modaldocumento">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pdocumento" name="documento" type="_documentoSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_solicitudSTKClassModal" name="modalsolicitud">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_psolicitud" name="solicitud" type="_solicitudSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_eventoSTKClassModal" name="modalevento">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pevento" name="evento" type="_eventoSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_filialSTKClassModal" name="modalfilial">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pfilial" name="filial" type="_filialSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_posicionSTKClassModal" name="modalposicion">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pposicion" name="posicion" type="_posicionSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_puestoSTKClassModal" name="modalpuesto">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_ppuesto" name="puesto" type="_puestoSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_reclutadorSTKClassModal" name="modalreclutador">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_preclutador" name="reclutador" type="_reclutadorSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_rolSTKClassModal" name="modalrol">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_prol" name="rol" type="_rolSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_trayectoriaSTKClassModal" name="modaltrayectoria">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_ptrayectoria" name="trayectoria" type="_trayectoriaSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_usuarioSTKClassModal" name="modalusuario">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_pusuario" name="usuario" type="_usuarioSTKClass"/>
+			      	</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="_permisoSTKClassModal" name="modalpermiso">
+			       	  <ownedAttribute xmi:type="uml:Property" xmi:id="_ppermiso" name="permiso" type="_permisoSTKClass"/>
+			      	</packagedElement>
+			
+			<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VI_tYCPtEeihHKoXXUFGQg">
+	        	<eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VI_tYSPtEeihHKoXXUFGQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+	          	<references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_2k80cSbaEeiTkOMT9MrOGg"/>
+	        	</eAnnotations>
+	        	<appliedProfile xmi:type="uml:Profile" href="ProfileSTK.profile.uml#_0"/>
+	      	</profileApplication>
+		</packagedElement>
+
+	 <packagedElement xmi:type="uml:Package" xmi:id="_RmsvEBgrEeiXUO3vwBykwQ" name="com.softtek.types">
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextType" name="HText">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="text"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFRgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFhgrEeiXUO3vwBykwQ" value="20"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hcheckboxType" name="HCheckbox">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvJxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvKBgrEeiXUO3vwBykwQ" value="check"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvKRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvKhgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvKxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvLBgrEeiXUO3vwBykwQ" value="VARCHAR(100)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hintegerType" name="HInteger">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvLxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMBgrEeiXUO3vwBykwQ" value="number"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvMhgrEeiXUO3vwBykwQ" value="Integer"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvMxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvNBgrEeiXUO3vwBykwQ" value="INT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	 
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdateType" name="HDate">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvOxgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPBgrEeiXUO3vwBykwQ" value="date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPRgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvPhgrEeiXUO3vwBykwQ" value="Date"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvPxgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvQBgrEeiXUO3vwBykwQ" value="DATE"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_htextlongType" name="HTextLong">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvSBgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvSRgrEeiXUO3vwBykwQ" value="longtext"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvShgrEeiXUO3vwBykwQ" name="size">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvSxgrEeiXUO3vwBykwQ" value="256"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvTBgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvTRgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvThgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvTxgrEeiXUO3vwBykwQ" value="VARCHAR(256)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hradioType" name="HRadio">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvUhgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvUxgrEeiXUO3vwBykwQ" value="radio"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvVBgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvVRgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvVhgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvVxgrEeiXUO3vwBykwQ" value="VARCHAR(10)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hbooleanType" name="HBoolean">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Boolean"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="TINYINT"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hdoubleType" name="HDouble">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="decimal"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hemailType" name="HEmail">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="email"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(128)"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+	   <packagedElement xmi:type="uml:Class" xmi:id="_hcurrencyType" name="HCurrency">
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="currency"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+	     </ownedAttribute>
+	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+	     </ownedAttribute>
+	   </packagedElement>
+	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_himageType" name="HImage">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="image"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+   	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_hfileType" name="HFile">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="file"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="Double"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="DECIMAL"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+   	   
+   	   <packagedElement xmi:type="uml:Class" xmi:id="_hemailType" name="HEmail">
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvExgrEeiXUO3vwBykwQ" name="type">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvFBgrEeiXUO3vwBykwQ" value="email"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvFxgrEeiXUO3vwBykwQ" name="typeJava">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGBgrEeiXUO3vwBykwQ" value="String"/>
+   	     </ownedAttribute>
+   	     <ownedAttribute xmi:type="uml:Property" xmi:id="_RmsvGRgrEeiXUO3vwBykwQ" name="typeSql">
+   	       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+   	       <defaultValue xmi:type="uml:LiteralString" xmi:id="_RmsvGhgrEeiXUO3vwBykwQ" value="VARCHAR(128)"/>
+   	     </ownedAttribute>
+   	   </packagedElement>
+	 
+	 </packagedElement>
+	 
+     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yXQQgBgqEeiXUO3vwBykwQ">
+       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQQgRgqEeiXUO3vwBykwQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+       </eAnnotations>
+       <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+     </profileApplication>
+     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yA1A8CCjEei6mbiCVs6ctg">
+       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yA-x8CCjEei6mbiCVs6ctg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+         <references xmi:type="ecore:EPackage" href="ProfileSTK.profile.uml#_Zp_Y8CCjEei6mbiCVs6ctg"/>
+       </eAnnotations>
+       <appliedProfile xmi:type="uml:Profile" href="ProfileSTK.profile.uml#_ahah4IM9EeW4E5WIqIiz6Q"/>
+     </profileApplication>	
+
+</uml:Model>
+		<profileSTK:Crud xmi:id="_candidatoSTK" base_Class="_candidatoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_generoSTK" base_Class="_generoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estatuscandidatoSTK" base_Class="_estatuscandidatoSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_solicitudSTK" base_Class="_solicitudSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_eventoSTK" base_Class="_eventoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_candidatoSTKDR" base_Class="_candidatoSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_candidatoSTKEF" base_Class="_candidatoSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_candidatoSTKDM" base_Class="_candidatoSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_candidatoSTKEN" base_Class="_candidatoSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_candidatoSTKNR" base_Class="_candidatoSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_candidatoSTKS"  base_Class="_candidatoSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_direccionSTK" base_Class="_direccionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_candidatoSTK" base_Class="_candidatoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_direccionSTKDR" base_Class="_direccionSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_direccionSTKEF" base_Class="_direccionSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_direccionSTKDM" base_Class="_direccionSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_direccionSTKEN" base_Class="_direccionSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_direccionSTKNR" base_Class="_direccionSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_direccionSTKS"  base_Class="_direccionSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_documentoSTK" base_Class="_documentoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_documentoSTKDR" base_Class="_documentoSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_documentoSTKEF" base_Class="_documentoSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_documentoSTKDM" base_Class="_documentoSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_documentoSTKEN" base_Class="_documentoSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_documentoSTKNR" base_Class="_documentoSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_documentoSTKS"  base_Class="_documentoSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_solicitudSTK" base_Class="_solicitudSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_posicionSTK" base_Class="_posicionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_candidatoSTK" base_Class="_candidatoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estatussolicitudSTK" base_Class="_estatussolicitudSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_solicitudSTKDR" base_Class="_solicitudSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_solicitudSTKEF" base_Class="_solicitudSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_solicitudSTKDM" base_Class="_solicitudSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_solicitudSTKEN" base_Class="_solicitudSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_solicitudSTKNR" base_Class="_solicitudSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_solicitudSTKS"  base_Class="_solicitudSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_eventoSTK" base_Class="_eventoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_tipoeventoSTK" base_Class="_tipoeventoSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_posicionSTK" base_Class="_posicionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_candidatoSTK" base_Class="_candidatoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estatuseventoSTK" base_Class="_estatuseventoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_eventoSTKDR" base_Class="_eventoSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_eventoSTKEF" base_Class="_eventoSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_eventoSTKDM" base_Class="_eventoSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_eventoSTKEN" base_Class="_eventoSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_eventoSTKNR" base_Class="_eventoSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_eventoSTKS"  base_Class="_eventoSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_filialSTK" base_Class="_filialSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_filialSTKDR" base_Class="_filialSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_filialSTKEF" base_Class="_filialSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_filialSTKDM" base_Class="_filialSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_filialSTKEN" base_Class="_filialSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_filialSTKNR" base_Class="_filialSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_filialSTKS"  base_Class="_filialSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_posicionSTK" base_Class="_posicionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_filialSTK" base_Class="_filialSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_puestoSTK" base_Class="_puestoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_tiponominaSTK" base_Class="_tiponominaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_reclutadorSTK" base_Class="_reclutadorSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_estatusposicionSTK" base_Class="_estatusposicionSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_solicitudSTK" base_Class="_solicitudSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_eventoSTK" base_Class="_eventoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_posicionSTKDR" base_Class="_posicionSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_posicionSTKEF" base_Class="_posicionSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_posicionSTKDM" base_Class="_posicionSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_posicionSTKEN" base_Class="_posicionSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_posicionSTKNR" base_Class="_posicionSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_posicionSTKS"  base_Class="_posicionSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_puestoSTK" base_Class="_puestoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_puestosSTK" base_Class="_puestosSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_puestoSTKDR" base_Class="_puestoSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_puestoSTKEF" base_Class="_puestoSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_puestoSTKDM" base_Class="_puestoSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_puestoSTKEN" base_Class="_puestoSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_puestoSTKNR" base_Class="_puestoSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_puestoSTKS"  base_Class="_puestoSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_reclutadorSTK" base_Class="_reclutadorSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_generoSTK" base_Class="_generoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_reclutadorSTKDR" base_Class="_reclutadorSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_reclutadorSTKEF" base_Class="_reclutadorSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_reclutadorSTKDM" base_Class="_reclutadorSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_reclutadorSTKEN" base_Class="_reclutadorSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_reclutadorSTKNR" base_Class="_reclutadorSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_reclutadorSTKS"  base_Class="_reclutadorSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_rolSTK" base_Class="_rolSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_rolSTKDR" base_Class="_rolSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_rolSTKEF" base_Class="_rolSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_rolSTKDM" base_Class="_rolSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_rolSTKEN" base_Class="_rolSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_rolSTKNR" base_Class="_rolSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_rolSTKS"  base_Class="_rolSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_trayectoriaSTK" base_Class="_trayectoriaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_candidatoSTK" base_Class="_candidatoSTKClass"/>
+		      		<profileSTK:EnumRadio xmi:id="_tipotrayectoriaSTK" base_Class="_tipotrayectoriaSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_documentoSTK" base_Class="_documentoSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_trayectoriaSTKDR" base_Class="_trayectoriaSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_trayectoriaSTKEF" base_Class="_trayectoriaSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_trayectoriaSTKDM" base_Class="_trayectoriaSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_trayectoriaSTKEN" base_Class="_trayectoriaSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_trayectoriaSTKNR" base_Class="_trayectoriaSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_trayectoriaSTKS"  base_Class="_trayectoriaSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_usuarioSTK" base_Class="_usuarioSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_rolSTK" base_Class="_rolSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_usuarioSTKDR" base_Class="_usuarioSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_usuarioSTKEF" base_Class="_usuarioSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_usuarioSTKDM" base_Class="_usuarioSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_usuarioSTKEN" base_Class="_usuarioSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_usuarioSTKNR" base_Class="_usuarioSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_usuarioSTKS"  base_Class="_usuarioSTKClassScaffold"/>
+		<profileSTK:Crud xmi:id="_permisoSTK" base_Class="_permisoSTKClass"/>
+		      		<profileSTK:Modal xmi:id="_rolSTK" base_Class="_rolSTKClass"/>
+					<profileSTK:DisplayResult xmi:id="_permisoSTKDR" base_Class="_permisoSTKClassDisplayResult"/>
+					<profileSTK:ExposedFilter xmi:id="_permisoSTKEF" base_Class="_permisoSTKClassExposedFilter"/>
+					<profileSTK:DisplayModal  xmi:id="_permisoSTKDM" base_Class="_permisoSTKClassDisplayModal"/>
+					<profileSTK:EntityName    xmi:id="_permisoSTKEN" base_Class="_permisoSTKClassEntityName"/>
+					<profileSTK:NotRequired   xmi:id="_permisoSTKNR" base_Class="_permisoSTKClassNotRequired"/>
+					<profileSTK:Scaffold      xmi:id="_permisoSTKS"  base_Class="_permisoSTKClassScaffold"/>
+	</xmi:XMI>
